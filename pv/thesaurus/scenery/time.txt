@@ -1,0 +1,9 @@
+[choose 1]
+noon
+morning
+day
+night
+dusk
+sunset
+sunrise
+[/choose]

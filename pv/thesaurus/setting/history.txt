@@ -1,0 +1,13 @@
+[# Historical periods]
+[choose 1]
+80s
+90s
+70s
+60s
+ancient
+world war II|world war 2
+modern
+futuristic
+anicient greece
+ancient rome
+[/choose]

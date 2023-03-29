@@ -1,0 +1,8 @@
+[# Type of medium]
+[choose _weighted]
+2|doodle
+5|printmaking
+5|screen printing
+1|mural
+1|mosaic
+[/choose]

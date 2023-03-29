@@ -1,0 +1,7 @@
+[# Type of medium]
+[choose 1]
+3d render
+photography
+picture
+photograph
+[/choose]

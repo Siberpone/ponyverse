@@ -1,0 +1,15 @@
+[# Pose Block ]
+[##]
+	Generates character pose description.
+
+	TODO:
+		- introduce "secondary" pose description ("raised hoof", "crossed legs", etc.)
+		- introduce species-specific groups (for humanized/eqg in particular)
+		- tune thesaurus weights
+	
+	BLOCK QUALITY: average
+[/##]
+
+[set group]any[/set]
+[file pv/get/single subj="pose"]
+[unset group]

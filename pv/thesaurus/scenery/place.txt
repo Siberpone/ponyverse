@@ -1,0 +1,11 @@
+[choose _weighted]
+3|village
+5|street
+4|alley
+3|field
+1|city
+2|town
+5|indoors
+5|outdoors
+1|megapolis
+[/choose]

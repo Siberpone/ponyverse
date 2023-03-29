@@ -1,0 +1,13 @@
+[# Generic settings/universes that don't fall into any other category]
+[choose 1]
+cyberpunk
+steampunk
+synthwave
+sovietwave
+military
+soviet
+wild west
+dystopia
+post-apocalyptic
+utopia
+[/choose]

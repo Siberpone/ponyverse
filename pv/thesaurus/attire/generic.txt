@@ -1,0 +1,14 @@
+[# Various clothes and outfits]
+[choose _weighted]
+4|clothes
+3|attire
+3|armor
+4|dress
+3|outfit
+2|leather jacket
+3|jacket
+2|power armor
+1|exoskeleton
+4|gown
+3|pants
+[/choose]

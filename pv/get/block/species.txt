@@ -1,0 +1,47 @@
+[# Species Block ]
+[##]
+	Generates species description. Character-specific overrides make sure they are
+	more likely to end up with their "native" species.
+
+	Due to Unprompted's unending bugs and limitations I gave up and written this module
+	with dumb if statements like a caveman. And they have to be single-line, too!
+
+	TODO:
+		- refactor this abomination when (and if) array and switch bugs get fixed.
+
+	BLOCK QUALITY: good (output quality that is, not the code, lol)
+[/##]
+
+[set character _new]{file pv/get/block/character}[/set]
+[set c]{get character}[/set]
+[if "c == 'chrysalis' or c == 'queen chrysalis'"]
+	{set s}{file pv/thesaurus/species/changeling-biased}{/set}
+[/if]
+[elif "c == 'sunset shimmer' or c == 'adagio dazzle' or c == 'sonata dusk'"]
+	{set s}{file pv/thesaurus/species/human-biased}{/set}
+[/elif]
+[else]
+	{set s}{file pv/thesaurus/species/pony-biased}{/set}
+[/else]
+
+[if s="pony"]
+	{if "c == 'octavia melody' or c =='octavia' or c == 'apple bloom' or c == 'pinkie pie' or c == 'applejack'"}
+		{{set s}}earth pony, pony{{/set}}
+	{/if}
+	{elif "c == 'vinyl scratch' or c == 'lyra heartstrings' or c == 'sweetie belle' or c == 'sunset shimmer' or c == 'sci-twi' or c == 'rarity' or c == 'starlight glimmer' or c =='shining armor' or c == 'trixie'"}
+		{{set s}}unicorn, pony{{/set}}
+	{/elif}
+	{elif "c == 'derpy' or c == 'scootaloo' or c == 'fluttershy' or c == 'rainbow dash'"}
+		{{set s}}pegasus, pony{{/set}}
+	{/elif}
+	{elif "c == 'princess celestia' or c == 'princess luna' or c == 'princess cadance' or c == 'nightmare moon'"}
+		{{set s}}alicorn, pony{{/set}}
+	{/elif}
+	{elif "c == 'twilight sparkle'"}
+		[# twiggie is a special little cupcake]
+		{{set s}}{{choose _weighted}}3|unicorn|1|alicorn{{/choose}}, pony{{/set}}
+	{/elif}
+[/if]
+
+[get s]
+[unset c s]

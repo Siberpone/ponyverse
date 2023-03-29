@@ -1,0 +1,10 @@
+[choose 1]
+lingerie
+garters
+garter belts
+thigh highs
+stockings
+choker
+socks
+panties
+[/choose]

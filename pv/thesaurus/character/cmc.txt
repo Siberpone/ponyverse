@@ -1,0 +1,5 @@
+[choose 1]
+sweetie belle
+scootaloo
+apple bloom
+[/choose]

@@ -1,0 +1,9 @@
+[choose _weighted]
+80|pony
+7|batpony
+3|kirin
+5|changeling
+2|humanized
+2|equestria girl
+1|dragon
+[/choose]

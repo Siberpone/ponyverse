@@ -1,0 +1,32 @@
+[# Character Block ]
+[##]
+	Fetches a random character from the thesaurus. Groups are weighted according
+	to a number of characters they contain to ensure even character distribution.
+	Mane 6 and support cast have slightly higher weights, so they appear slightly
+	more often. Some groups may have teir own internal weights.
+
+	<group> - optional parameter that specifies a group to choose a character from.	 
+
+	TODO:
+		- see if Astra V4 knows any other characters
+		- see how to populate character lists in ui programmatically (probably not
+			possible with current unprompted capabilities)
+
+	BLOCK QUALITY: good
+[/##]
+
+[set group _new]any[/set]
+[if group="any"]
+	{choose _weighted}
+		9|{file pv/thesaurus/character/mane6}
+		3|{file pv/thesaurus/character/cmc}
+		8|{file pv/thesaurus/character/support_cast}
+		4|{file pv/thesaurus/character/background}
+		2|{file pv/thesaurus/character/villan}
+		4|{file pv/thesaurus/character/eqg}
+	{/choose}
+[/if]
+[else]
+	{file pv/get/single subj="character"}
+[/else]
+[unset group]

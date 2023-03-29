@@ -1,0 +1,13 @@
+[# Expression Block ]
+[##]
+	Generates emotion or facial expression description.
+
+	TODO:
+		- expand related thesaurus
+
+	BLOCK QUALITY: good
+[/##]
+
+[set group _new]any[/set]
+[file pv/get/single subj="expression"]
+[unset group]

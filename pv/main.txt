@@ -1,0 +1,61 @@
+[template name="Ponyverse"]
+## Welcome to Ponyverse!
+The configurable pony prompt helper. Shuffle some sliders around and make some awesome-looking pone or check out the presets by selecting the "Ponyverse Presets" from the "Select Function" drop-down above.
+
+See README for more info and advanced usage tips or visit **[Ponyverse repo](https://github.com)** over on GitHub. Have fun!
+
+*Don't forget to tick the "Auto-include this in prompt" at the bottom.*
+[/template]
+
+[# Character Block ]
+[set character_g _new _label="CHARACTER Group" _choices="any|mane6|cmc|support_cast|background|villan|eqg" _ui="dropdown"]any[/set]
+[set character _new _label="CHARACTER" _placeholder="Type in your character here or leave blank for random choice"]{file pv/get/block/character group="{{get character_g}}"}[/set]
+
+[# Species Block ]
+[set species _new _label="SPECIES" _placeholder="Type in desired species here or leave blank for automatic choice"]{file pv/get/block/species}[/set]
+
+[# Pose Block ]
+[set pose_c _new _label="POSE Block Appearing Chance" _ui="slider" _minimum=0 _maximum=100 _step=5]60[/set]
+
+[# Expression Block ]
+[set expression_c _new _label="EXPRESSION Block Appearing Chance" _ui="slider" _minimum=0 _maximum=100 _step=5]50[/set]
+
+[# Facial Features Description Block ]
+[set face_c _new _label="FACE Block Appearing Chance" _ui="slider" _minimum=0 _maximum=100 _step=5]15[/set]
+[set face_n _new _label="FACE Descriptions Number" _ui="slider" _minimum=1 _maximum=5 _step=1]1[/set]
+
+[# Body Features Description Block ]
+[set body_c _new _label="BODY Block Appearing Chance" _ui="slider" _minimum=0 _maximum=100 _step=5]20[/set]
+[set body_n _new _label="BODY Descriptions Number" _ui="slider" _minimum=1 _maximum=5 _step=1]2[/set]
+
+[# Setting Block ]
+[set setting_g _new _label="SETTING Group" _choices="any|fantasy|generic|history|movie|scifi" _ui="dropdown"]any[/set]
+[set setting_c _new _label="SETTING Block Appearing Chance" _ui="slider" _minimum=0 _maximum=100 _step=5]20[/set]
+
+[# Attire Block ]
+[set attire_g _new _label="ATTIRE Group" _choices="any|generic|headwear|outfits|sexy" _ui="dropdown"]any[/set]
+[set attire_c _new _label="ATTIRE Block Appearing Chance" _ui="slider" _minimum=0 _maximum=100 _step=5]20[/set]
+[set attire_n _new _label="ATTIRE Descriptions Number" _ui="slider" _minimum=1 _maximum=10 _step=1]1[/set]
+
+[# Genereic Block ]
+[set generic_c _new _label="GENERIC Block Appearing Chance" _ui="slider" _minimum=0 _maximum=100 _step=5]85[/set]
+[set generic_n _new _label="GENERIC Descriptions Number" _ui="slider" _minimum=1 _maximum=10 _step=1]3[/set]
+
+[# Scenery Block ]
+[set scenery_g _new _label="SCENERY Group" _choices="any|biome|nature|place|weather|time" _ui="dropdown"]any[/set]
+[set scenery_c _new _label="SCENERY Block Appearing Chance" _ui="slider" _minimum=0 _maximum=100 _step=5]15[/set]
+[set scenery_n _new _label="SCENERY Descriptions Number" _ui="slider" _minimum=1 _maximum=10 _step=1]1[/set]
+
+[# Medium Block ]
+[set medium_g _new _label="MEDIUM Group" _choices="any|painting|drawing|realistic|other" _ui="dropdown"]any[/set]
+[set medium_c _new _label="MEDIUM Block Appearing Chance" _ui="slider" _minimum=0 _maximum=100 _step=5]75[/set]
+
+[# Style Block ]
+[set style_g _new _label="STYLE Group" _choices="any|artist|art_movement" _ui="dropdown"]any[/set]
+[set style_c _new _label="STYLE Block Appearing Chance" _ui="slider" _minimum=0 _maximum=100 _step=5]45[/set]
+
+[# Negative Prompt Settings ]
+[set np_mode _new _label="Negative Prompt Mode" _choices="use_mine|append|blank" _ui="dropdown"]append[/set]
+[set np _new _label="Your Negative Prompt" _placeholder="Type in Your negative prompt here"][/set]
+
+[file pv/prompt]

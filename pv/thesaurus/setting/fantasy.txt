@@ -1,0 +1,10 @@
+[# Popular fantasy universes and franchises]
+[choose 1]
+lord of the rings|middle-earth universe
+conan the barbarian
+magic the gathering
+warcraft
+diablo
+my little pony
+warhammer|warhammer 40k
+[/choose]

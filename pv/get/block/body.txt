@@ -1,0 +1,22 @@
+[# Body Block ]
+[##]
+	Generates a random body part description.
+
+	<n> - mandatory parameter specifying the number of descriptions to generate.
+
+	TODO:
+		- expand and categorize related thesaurus
+		- introduce species-specific groups (for humanized/eqg in particular)
+		- tune thesaurus weights to favor better adjective+body part combos
+	
+	BLOCK QUALITY: average
+[/##]
+
+[set n _new]1[/set]
+[repeat n _sep=", "]{choose _weighted}
+20|{file pv/thesaurus/adjective/descriptive} {file pv/get/single subj="body"}
+45|{file pv/thesaurus/adjective/compliment} {file pv/get/single subj="body"}
+20|{file pv/thesaurus/adjective/elemental} {file pv/get/single subj="body"}
+15|{file pv/thesaurus/adjective/size} {file pv/get/single subj="body"}
+{/choose}[/repeat]
+[unset n]

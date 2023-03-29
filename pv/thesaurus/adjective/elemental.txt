@@ -1,0 +1,9 @@
+[# Adjectives describing forces of nature or elemental forces]
+[choose 1]
+fiery
+ghostly
+icy
+metallic
+ethereal
+otherworldly
+[/choose]

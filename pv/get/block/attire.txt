@@ -1,0 +1,25 @@
+[# Attire Block ]
+[##]
+	Generates description of a character's attire.
+
+	<n> - number of descriptions to generate.
+	<group> - scenery group like "place" or "weather". See pv/thesaurus/scenery/
+		for available categories.
+
+	TODO:
+		- extend and weigh related thesaurus
+		- introduce species-specific bias (for humanized/eqg)
+
+	BLOCK QUALITY: average
+[/##]
+
+[set group _new]any[/set]
+[set n _new]1[/set]
+[set grp]{{get group}}[/set]
+
+[repeat n _sep=", "]{choose 1}
+wearing {file pv/get/single subj="attire" group="{{get group}}"}
+{file pv/get/single subj="attire" group="{{get group}}"}
+{/choose}[/repeat]
+
+[unset n group grp]

@@ -1,0 +1,12 @@
+[# Facial expressions]
+[choose 1]
+looking [chance 50]back [/chance]at you
+smiling [chance 50]back [/chance]at you
+open smile
+looking at you with [choose 1]disdain|pity|love|amazement|terror|awe|horror[/choose]
+seductive look
+blushing
+dejected
+puzzled
+quizzical
+[/choose]

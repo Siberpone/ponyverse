@@ -1,0 +1,27 @@
+[# Generic Block ]
+[##]
+	Generates generic description or "magical" buzzwords and phrases.
+
+	<n> - mandatory parameter that specifies the number of descriptions to
+		generate.
+
+	TODO:
+		- expand thesaurus
+		- refactor to make use of thesaurus folder structure instead of a hardcoded list
+	
+	BLOCK QUALITY: good
+[/##]
+
+[set n _new]1[/set]
+[choose n]
+	{file pv/thesaurus/adjective/compliment} details|{file pv/thesaurus/adjective/descriptive} details
+	{file pv/thesaurus/adjective/compliment-ly} detailed
+	{file pv/thesaurus/adjective/compliment} cinematic lighting
+	trending on [choose 1]artstation|pixiv|deviantart|behance|zbrushcentral|cgsociety[/choose]
+	[choose 1]soft|hard|flat|{file pv/thesaurus/adjective/compliment}[/choose] shading
+	countershading
+	god rays
+	masterpiece
+	4K
+[/choose]
+[unset n]

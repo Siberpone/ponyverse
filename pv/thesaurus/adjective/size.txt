@@ -1,0 +1,7 @@
+[# Adjectives related to size]
+[choose 1]
+giant
+tiny
+large
+small
+[/choose]

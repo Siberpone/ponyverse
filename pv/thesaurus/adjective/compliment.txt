@@ -1,0 +1,10 @@
+[choose 1]
+astonishing
+beautiful
+dazzling
+intricate
+sophisticated
+tremendous
+pretty
+lush
+[/choose]

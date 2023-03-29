@@ -1,0 +1,23 @@
+[# Face Block ]
+[##]
+	Generates a random facial feature description.
+
+	<n> - number of descriptions to generate.
+
+	TODO:
+		- expand related thesaurus
+		- tune weights
+		- see how to improve adjective+face part combos coherency
+		- come up with different types of face descriptions
+
+	BLOCK QUALITY: average
+[/##]
+
+[set n _new]1[/set]
+[repeat n _sep=", "]{choose _weighted}
+25|{file pv/thesaurus/adjective/descriptive} {file pv/get/single subj="face"}
+45|{file pv/thesaurus/adjective/compliment} {file pv/get/single subj="face"}
+15|{file pv/thesaurus/adjective/elemental} {file pv/get/single subj="face"}
+15|{file pv/thesaurus/adjective/size} {file pv/get/single subj="face"}
+{/choose}[/repeat]
+[unset n]

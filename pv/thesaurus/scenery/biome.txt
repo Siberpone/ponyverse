@@ -1,0 +1,14 @@
+[choose _weighted]
+2|desert
+5|tropical paradise
+1|tundra
+5|forest
+4|mountains
+2|foothills
+1|volcano
+3|grasslands
+5|woodlands
+3|arctic
+2|marsh
+1|bog
+[/choose]

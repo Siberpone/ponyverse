@@ -1,0 +1,10 @@
+[choose 1]
+nun outfit
+fireman outfit
+police officer outfit
+nurse outfit
+bunny outfit
+haloween outfit
+housemaid outfit
+teacher outfit
+[/choose]

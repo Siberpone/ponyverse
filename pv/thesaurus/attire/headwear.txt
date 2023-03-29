@@ -1,0 +1,8 @@
+[choose 1]
+witch hat
+top hat
+baseball cap
+wizard hat
+hat
+beanie
+[/choose]

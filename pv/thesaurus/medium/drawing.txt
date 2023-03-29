@@ -1,0 +1,15 @@
+[# Type of medium ]
+[set submedium][choose 1]art|drawing[/choose][/set]
+[choose 1]
+digital [get submedium]
+pencil [get submedium]
+charcoal [get submedium]
+ink [get submedium]
+pen and paper [get submedium]
+pencil sketch
+sketch
+lineart
+lineart sketch
+lineart drawing
+[/choose]
+[unset submedium]

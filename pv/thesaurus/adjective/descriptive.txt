@@ -1,0 +1,19 @@
+[# Generic Adjective]
+[choose 1]
+colorful
+complex
+delicate
+dreamlike
+elegant
+epic
+expressive
+glamorous
+glowing
+lush
+minimalistic
+realistic
+rich
+ridiculous
+sharp
+vibrant
+[/choose]

@@ -1,0 +1,10 @@
+[choose 1]
+groovy
+adorable
+cute
+delicate
+fluffy
+funny
+gentle
+zany
+[/choose]

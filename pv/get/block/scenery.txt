@@ -1,0 +1,36 @@
+[# Scenery Block ]
+[##]
+	Generates scenery description.
+
+	<n> - mandatory parameter that specifies the number of descriptions to
+		generate.
+	<group> - optional parameter that specifies scenery group like "place"
+		or "weather". See pv/thesaurus/scenery/ for available categories.
+
+	TODO:
+		- tune weights. The block takes away too much attention from the character,
+			sometimes to the point where the character doesn't show up. Weeding out
+			"attention-grabbing" options from thesaurus also should help.
+		- expand related thesaurus
+
+	BLOCK QUALITY: poor
+[/##]
+
+[set group _new]any[/set]
+[set n _new]1[/set]
+[if group="any"]
+	({choose n}
+		{file pv/thesaurus/scenery/biome} background
+		{file pv/thesaurus/adjective/weather} weather
+		{file pv/thesaurus/adjective/weather} {file pv/thesaurus/scenery/place} background
+		{file pv/thesaurus/scenery/place} at {file pv/thesaurus/scenery/time} background
+		{file pv/thesaurus/adjective/descriptive} {file pv/thesaurus/scenery/time}
+		{file pv/thesaurus/adjective/*} background
+	{/choose}:0.35)
+[/if]
+[else]
+	{set grp}{{get group}}{/set}
+	{repeat n _sep=", "}{{file pv/get/single subj="scenery" group="{get grp}"}}{/repeat}
+	{unset grp}
+[/else]
+[unset group n]

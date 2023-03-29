@@ -1,0 +1,14 @@
+[# Body parts]
+[choose _weighted]
+5|fur
+4|coat
+2|plot
+3|legs
+4|hooves
+1|head
+3|face
+4|body
+2|tail
+2|mane
+5|mane and tail 
+[/choose]

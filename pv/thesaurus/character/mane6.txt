@@ -1,0 +1,8 @@
+[choose 1]
+fluttershy
+twilight sparkle
+rainbow dash
+rarity
+applejack
+pinkie pie
+[/choose]

@@ -1,0 +1,27 @@
+[# Art Medium Block ]
+[##]
+	Generates a random art medium description.
+
+	<group> - optional parameter that specifies art medium group like "drawing"
+		or "realistic". See pv/thesaurus/medium/ for available categories.
+
+	TODO:
+		- expand related thesaurus
+		- see how to improve grouping
+
+	BLOCK QUALITY: good
+[/##]
+
+[set group _new]any[/set]
+[if group="any"]
+	{choose _weighted}
+		15|{{file pv/thesaurus/medium/drawing}}
+		15|{{file pv/thesaurus/medium/painting}}
+		4|{{file pv/thesaurus/medium/realistic}}
+		6|{{file pv/thesaurus/medium/other}}
+	{/choose}
+[/if]
+[else]
+	{file "pv/thesaurus/medium/{{get group}}"}
+[/else]
+[unset group]

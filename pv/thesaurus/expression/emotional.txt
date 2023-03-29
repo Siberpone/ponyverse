@@ -1,0 +1,29 @@
+[# Emotional state adjectives]
+[choose 1]
+aggravated
+amazed
+anxious
+awestruck
+bashful
+brave
+cautious
+cheerful
+chilly
+comfortable
+dreadful
+excited
+festive
+flabberghasted
+happy
+horrified
+interested
+irritated
+jolly
+optimistic
+pessimistic
+reluctant
+shy
+tense
+terrified
+tired
+[/choose]

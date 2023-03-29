@@ -1,0 +1,8 @@
+[choose _weighted]
+3|princess celestia
+3|princess luna
+3|starlight glimmer
+2|trixie
+2|princess cadance
+1|shining armor
+[/choose]

@@ -15,7 +15,7 @@ See README for more info and advanced usage tips or visit **[Ponyverse repo](htt
 [set species _new _label="SPECIES" _placeholder="Type in desired species here or leave blank for automatic choice"]{file pv/get/species}[/set]
 
 [# Custom Block]
-[set custom _new _label="CUSTOM block" _placeholder="Type your tags here"][/set]
+[set custom _new _label="CUSTOM block" _placeholder="Type in your tags here"][/set]
 
 [# Pose Block ]
 [set pose_c _new _label="POSE Block Appearing Chance" _ui="slider" _minimum=0 _maximum=100 _step=5]60[/set]
@@ -58,4 +58,4 @@ See README for more info and advanced usage tips or visit **[Ponyverse repo](htt
 [set np_mode _new _label="Negative Prompt Mode" _choices="use_mine|append|blank" _ui="dropdown"]append[/set]
 [set np _new _label="Your Negative Prompt" _placeholder="Type in Your negative prompt here"][/set]
 
-[file pv/prompt]
+[file pv/prompt_composer/default]

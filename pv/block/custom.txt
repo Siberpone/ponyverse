@@ -1,0 +1,9 @@
+[# Custom User Input Block ]
+[##]
+	Inserts user input into the prompt if not empty.
+[/##]
+
+[set char_n][info character_count][get custom][/info][/set]
+[if "char_n > 0"]
+	{get custom},
+[/if]

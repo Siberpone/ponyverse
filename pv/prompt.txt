@@ -1,6 +1,6 @@
 [get character],
 [get species],
-solo,
+[file pv/block/custom]
 [chance "{get pose_c}"]{file pv/get/pose},[/chance]
 [chance "{get expression_c}"]{file pv/get/expression},[/chance]
 [chance "{get face_c}"]{file pv/get/face n="{{get face_n}}"},[/chance]

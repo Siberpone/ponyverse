@@ -122,3 +122,4 @@ Soon&trade;
 * **Breaking Change** Reworked blocks API to be more concise. See updated [examples](#using-individual-blocks-with-your-prompt).
 * **Breaking Change** Removed Setting block due to low/bad influence on the outputs. Actual good stuff from it has been moved to style/setting group.
 * Added repeatability to Style block.
+* Added Custom user input block.

@@ -1,0 +1,15 @@
+[# Block Wrapper ]
+[##]
+	Handles Block parameters when calling a block. Imitates "local" variables,
+	so to speak.
+
+	NOTE: This is a helper function, not meant to be called by the users.
+[/##]
+
+[set g _new]any[/set]
+[set group _new]{get g}[/set]
+[set n _new]1[/set]
+
+[file "pv/block/{get block}"]
+
+[unset group n block]

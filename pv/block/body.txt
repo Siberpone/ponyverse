@@ -12,11 +12,9 @@
 	BLOCK QUALITY: average
 [/##]
 
-[set n _new]1[/set]
 [repeat n _sep=", "]{choose _weighted}
 20|{file pv/thesaurus/adjective/descriptive} {file pv/get/single subj="body"}
 45|{file pv/thesaurus/adjective/compliment} {file pv/get/single subj="body"}
 20|{file pv/thesaurus/adjective/elemental} {file pv/get/single subj="body"}
 15|{file pv/thesaurus/adjective/size} {file pv/get/single subj="body"}
 {/choose}[/repeat]
-[unset n]

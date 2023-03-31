@@ -9,10 +9,10 @@ See README for more info and advanced usage tips or visit **[Ponyverse repo](htt
 
 [# Character Block ]
 [set character_g _new _label="CHARACTER Group" _choices="any|mane6|cmc|support_cast|background|villan|eqg" _ui="dropdown"]any[/set]
-[set character _new _label="CHARACTER" _placeholder="Type in your character here or leave blank for random choice"]{file pv/get/block/character group="{{get character_g}}"}[/set]
+[set character _new _label="CHARACTER" _placeholder="Type in your character here or leave blank for random choice"]{file pv/get/character group="{{get character_g}}"}[/set]
 
 [# Species Block ]
-[set species _new _label="SPECIES" _placeholder="Type in desired species here or leave blank for automatic choice"]{file pv/get/block/species}[/set]
+[set species _new _label="SPECIES" _placeholder="Type in desired species here or leave blank for automatic choice"]{file pv/get/species}[/set]
 
 [# Pose Block ]
 [set pose_c _new _label="POSE Block Appearing Chance" _ui="slider" _minimum=0 _maximum=100 _step=5]60[/set]

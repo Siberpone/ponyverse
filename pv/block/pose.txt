@@ -10,6 +10,4 @@
 	BLOCK QUALITY: average
 [/##]
 
-[set group]any[/set]
 [file pv/get/single subj="pose"]
-[unset group]

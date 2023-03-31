@@ -12,7 +12,6 @@
 	BLOCK QUALITY: average
 [/##]
 
-[set group _new]any[/set]
 [if group="any"]
 	{choose _weighted}
 		7|{file pv/thesaurus/setting/fantasy}
@@ -25,4 +24,3 @@
 [else]
 	{file pv/get/single subj="setting"}{chance 50} setting{/chance}
 [/else]
-[unset group]

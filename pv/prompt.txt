@@ -1,16 +1,16 @@
 [get character],
 [get species],
 solo,
-[chance "{get pose_c}"]{file pv/get/block/pose},[/chance]
-[chance "{get expression_c}"]{file pv/get/block/expression},[/chance]
-[chance "{get face_c}"]{file pv/get/block/face n="{{get face_n}}"},[/chance]
-[chance "{get body_c}"]{file pv/get/block/body n="{{get body_n}}"},[/chance]
-[chance "{get setting_c}"]{file pv/get/block/setting group="{{get setting_g}}"},[/chance]
-[chance "{get attire_c}"]{file pv/get/block/attire group="{{get attire_g}}" n="{{get attire_n}}"},[/chance]
-[chance "{get generic_c}"]{file pv/get/block/generic n="{{get generic_n}}"},[/chance]
-[chance "{get scenery_c}"]{file pv/get/block/scenery group="{{get scenery_g}}" n="{{get scenery_n}}"},[/chance]
-[chance "{get medium_c}"]{file pv/get/block/medium group="{{get medium_g}}"},[/chance]
-[chance "{get style_c}"]{file pv/get/block/style group="{{get style_g}}"},[/chance]
+[chance "{get pose_c}"]{file pv/get/pose},[/chance]
+[chance "{get expression_c}"]{file pv/get/expression},[/chance]
+[chance "{get face_c}"]{file pv/get/face n="{{get face_n}}"},[/chance]
+[chance "{get body_c}"]{file pv/get/body n="{{get body_n}}"},[/chance]
+[chance "{get setting_c}"]{file pv/get/setting group="{{get setting_g}}"},[/chance]
+[chance "{get attire_c}"]{file pv/get/attire group="{{get attire_g}}" n="{{get attire_n}}"},[/chance]
+[chance "{get generic_c}"]{file pv/get/generic n="{{get generic_n}}"},[/chance]
+[chance "{get scenery_c}"]{file pv/get/scenery group="{{get scenery_g}}" n="{{get scenery_n}}"},[/chance]
+[chance "{get medium_c}"]{file pv/get/medium group="{{get medium_g}}"},[/chance]
+[chance "{get style_c}"]{file pv/get/style group="{{get style_g}}"},[/chance]
 (derpibooru_p_95:1.2)
 
 [file pv/get/negative]

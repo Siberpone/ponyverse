@@ -12,7 +12,6 @@
 	BLOCK QUALITY: good (output quality that is, not the code, lol)
 [/##]
 
-[set character _new]{file pv/get/block/character}[/set]
 [set c]{get character}[/set]
 [if "c == 'chrysalis' or c == 'queen chrysalis'"]
 	{set s}{file pv/thesaurus/species/changeling-biased}{/set}

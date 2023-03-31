@@ -105,14 +105,18 @@ This sets the character to Twilight Sparkle; species to "alicorn, pony"; pose bl
 ### Using Individual Blocks With Your Prompt
 Blocks can be injected into your own prompt direclty in the prompt textbox:
 ```
-[file pv/get/block/character] wearing a funny hat
+[file pv/get/character] wearing a funny hat
 ```
 ```
-trixie trotting in the fields, unicorn, solo, [file pv/get/block/generic n=3], derpibooru_p_95
+trixie trotting in the fields, unicorn, solo, [file pv/get/generic n=3], derpibooru_p_95
 ```
 ```
-starlight glimmer, [file pv/get/block/pose], [file pv/get/block/scenery group="weather"]
+starlight glimmer, [file pv/get/pose], [file pv/get/scenery g="weather"]
 ```
 
 ## Blocks
 Soon&trade;
+
+## Changelog
+#### 2023-03-31
+* **Breaking Change** Reworked blocks API to be more concise. See updated [examples](#using-individual-blocks-with-your-prompt).

@@ -15,7 +15,6 @@
 	BLOCK QUALITY: good
 [/##]
 
-[set group _new]any[/set]
 [if group="any"]
 	{choose _weighted}
 		9|{file pv/thesaurus/character/mane6}
@@ -29,4 +28,3 @@
 [else]
 	{file pv/get/single subj="character"}
 [/else]
-[unset group]

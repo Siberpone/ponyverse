@@ -12,7 +12,6 @@
 	BLOCK QUALITY: good
 [/##]
 
-[set n _new]1[/set]
 [choose n]
 	{file pv/thesaurus/adjective/compliment} details|{file pv/thesaurus/adjective/descriptive} details
 	{file pv/thesaurus/adjective/compliment-ly} detailed
@@ -24,4 +23,3 @@
 	masterpiece
 	4K
 [/choose]
-[unset n]

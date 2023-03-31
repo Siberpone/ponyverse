@@ -12,7 +12,6 @@
 	BLOCK QUALITY: good
 [/##]
 
-[set group _new]any[/set]
 [if group="any"]
 	{choose _weighted}
 		15|{{file pv/thesaurus/medium/drawing}}
@@ -24,4 +23,3 @@
 [else]
 	{file "pv/thesaurus/medium/{{get group}}"}
 [/else]
-[unset group]

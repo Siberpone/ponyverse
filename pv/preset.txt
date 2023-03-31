@@ -14,8 +14,8 @@ Select a preset from below and make some awesome-looking pone!
 [/##]
 
 [set preset _new _choices="default|pure_art|minimalist|maximalist" _ui="dropdown"]default[/set]
-[set character _new _label="CHARACTER" _placeholder="Type in your character here or leave blank for random choice"]{file pv/get/block/character}[/set]
-[set species _new _label="SPECIES" _placeholder="Type in desired species here or leave blank for automatic choice"]{file pv/get/block/species}[/set]
+[set character _new _label="CHARACTER" _placeholder="Type in your character here or leave blank for random choice"]{file pv/get/character}[/set]
+[set species _new _label="SPECIES" _placeholder="Type in desired species here or leave blank for automatic choice"]{file pv/get/species}[/set]
 
 [if preset="default"]
 	[file "pv/main" character_g=any pose_c=60 expression_c=50 face_c=15 face_n=1 body_c=20 body_n=2 setting_g=any setting_c=20 attire_c=20 generic_c=85 generic_n=3 scenery_g=any scenery_c=15 scenery_n=1 medium_g=any medium_c=75 style_g=any style_c=45 np_mode=append]

@@ -13,7 +13,6 @@
 		very random nature of the block)
 [/##]
 
-[set group _new]any[/set]
 [if group="any"]
 	{choose 1}
 		{file pv/get/single subj="style" group="art_movement"}
@@ -26,4 +25,3 @@
 [else]
 	{file pv/get/single subj="style"}
 [/else]
-[unset group]

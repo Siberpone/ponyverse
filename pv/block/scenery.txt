@@ -12,12 +12,11 @@
 			sometimes to the point where the character doesn't show up. Weeding out
 			"attention-grabbing" options from thesaurus also should help.
 		- expand related thesaurus
+		- refactor grp
 
 	BLOCK QUALITY: poor
 [/##]
 
-[set group _new]any[/set]
-[set n _new]1[/set]
 [if group="any"]
 	({choose n}
 		{file pv/thesaurus/scenery/biome} background
@@ -33,4 +32,3 @@
 	{repeat n _sep=", "}{{file pv/get/single subj="scenery" group="{get grp}"}}{/repeat}
 	{unset grp}
 [/else]
-[unset group n]

@@ -11,6 +11,7 @@ Select a preset from below and make some awesome-looking pone!
 [##]
 	TODO:
 		- explain how to add user presets
+		- update preset strings
 [/##]
 
 [set preset _new _choices="default|pure_art|minimalist|maximalist" _ui="dropdown"]default[/set]

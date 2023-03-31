@@ -7,7 +7,9 @@ sovietwave
 military
 soviet
 wild west
-dystopia
+dystopian
 post-apocalyptic
-utopia
+utopian
+dc universe
+marvel universe|mcu
 [/choose]

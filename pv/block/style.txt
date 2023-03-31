@@ -7,21 +7,24 @@
 	TODO:
 		- consider narrowing down artists list
 		- see how to improve categorization
-		- consider introducing repeatability
 
 	BLOCK QUALITY: average (due to extremely large thesaurus lists and therefore
 		very random nature of the block)
 [/##]
 
 [if group="any"]
-	{choose 1}
-		{file pv/get/single subj="style" group="art_movement"}
-		by {file pv/get/single subj="style" group="artist"}
-	{/choose}
+	{repeat n _sep=", "}{{choose 1}}
+		{{{file pv/thesaurus/style/art_movement}}}
+		by {{{file pv/thesaurus/style/artist}}}
+		{{{file pv/thesaurus/style/setting}}} setting
+	{{/choose}}{/repeat}
 [/if]
 [elif group="artist"]
-	by {file pv/get/single subj="style"}
+	by {repeat n _sep=" "}{{file pv/thesaurus/style/artist}}{/repeat}
+[/elif]
+[elif group="setting"]
+	{repeat n _sep=", "}{{file pv/thesaurus/style/setting}} setting{/repeat}
 [/elif]
 [else]
-	{file pv/get/single subj="style"}
+	{repeat n _sep=", "}{{file pv/thesaurus/style/art_movement}}{/repeat}
 [/else]

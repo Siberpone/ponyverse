@@ -28,10 +28,6 @@ See README for more info and advanced usage tips or visit **[Ponyverse repo](htt
 [set body_c _new _label="BODY Block Appearing Chance" _ui="slider" _minimum=0 _maximum=100 _step=5]20[/set]
 [set body_n _new _label="BODY Descriptions Number" _ui="slider" _minimum=1 _maximum=5 _step=1]2[/set]
 
-[# Setting Block ]
-[set setting_g _new _label="SETTING Group" _choices="any|fantasy|generic|history|movie|scifi" _ui="dropdown"]any[/set]
-[set setting_c _new _label="SETTING Block Appearing Chance" _ui="slider" _minimum=0 _maximum=100 _step=5]20[/set]
-
 [# Attire Block ]
 [set attire_g _new _label="ATTIRE Group" _choices="any|generic|headwear|outfits|sexy" _ui="dropdown"]any[/set]
 [set attire_c _new _label="ATTIRE Block Appearing Chance" _ui="slider" _minimum=0 _maximum=100 _step=5]20[/set]
@@ -51,8 +47,9 @@ See README for more info and advanced usage tips or visit **[Ponyverse repo](htt
 [set medium_c _new _label="MEDIUM Block Appearing Chance" _ui="slider" _minimum=0 _maximum=100 _step=5]75[/set]
 
 [# Style Block ]
-[set style_g _new _label="STYLE Group" _choices="any|artist|art_movement" _ui="dropdown"]any[/set]
+[set style_g _new _label="STYLE Group" _choices="any|artist|art_movement|setting" _ui="dropdown"]any[/set]
 [set style_c _new _label="STYLE Block Appearing Chance" _ui="slider" _minimum=0 _maximum=100 _step=5]45[/set]
+[set style_n _new _label="STYLE Descriptions Number" _ui="slider" _minimum=1 _maximum=10 _step=1]1[/set]
 
 [# Negative Prompt Settings ]
 [set np_mode _new _label="Negative Prompt Mode" _choices="use_mine|append|blank" _ui="dropdown"]append[/set]

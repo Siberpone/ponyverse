@@ -12,4 +12,4 @@
 [chance "{get style_c}"]{file pv/get/style n="{{get style_n}}" group="{{get style_g}}"},[/chance]
 (derpibooru_p_95:1.2)
 
-[file pv/get/negative]
+[file pv/utils/negative]

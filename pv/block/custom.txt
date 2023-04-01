@@ -7,3 +7,4 @@
 [if "char_n > 0"]
 	{get custom},
 [/if]
+[unset char_n]

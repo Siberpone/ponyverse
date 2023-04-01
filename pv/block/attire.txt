@@ -16,8 +16,8 @@
 [set grp]{get group}[/set]
 
 [repeat n _sep=", "]{choose 1}
-wearing {file pv/get/single subj="attire" group="{{get group}}"}
-{file pv/get/single subj="attire" group="{{get group}}"}
+wearing {file pv/get/single subj="attire" group="{{get grp}}"}
+{file pv/get/single subj="attire" group="{{get grp}}"}
 {/choose}[/repeat]
 
 [unset grp]

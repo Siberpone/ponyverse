@@ -8,4 +8,4 @@
 	BLOCK QUALITY: good
 [/##]
 
-[file pv/get/single subj="expression"]
+[file pv/get/single cat="expression"]

@@ -8,7 +8,6 @@
 	<group> - optional parameter that specifies a group to choose a character from.	 
 
 	TODO:
-		- see if Astra V4 knows any other characters
 		- see how to populate character lists in ui programmatically (probably not
 			possible with current unprompted capabilities)
 
@@ -26,5 +25,5 @@
 	{/choose}
 [/if]
 [else]
-	{file pv/get/single subj="character"}
+	{file pv/get/single cat="character" sg="{{get group}}"}
 [/else]

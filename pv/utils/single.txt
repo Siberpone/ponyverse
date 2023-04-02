@@ -1,0 +1,23 @@
+[# Generic collection getter ]
+[##]
+	Fetches a random item of a given category from the thesaurus.
+
+	<category|cat> - mandatory parameter that specifies the thesaurus collection
+		(i. e. a folder) to fetch an item from.
+	<s_group|sg> - optional parameter that specifies item group (i. e. a file).
+		It is assumed that the file returns a single entry.
+[/##]
+
+[set cat _new][get category][/set]
+[set category _new][get cat][/set]
+[set sg _new]any[/set]
+[set s_group _new][get sg][/set]
+
+[if s_group="any"]
+	{file "pv/thesaurus/{{get category}}/*"}
+[/if]
+[else]
+	{file "pv/thesaurus/{{get category}}/{{get s_group}}"}
+[/else]
+
+[unset category cat s_group sg]

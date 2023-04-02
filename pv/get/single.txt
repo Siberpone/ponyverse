@@ -1,18 +1,1 @@
-[# Generic collection getter.]
-[##]
-	Fetches a random item of a given subject from the thesaurus.
-	
-	<subj>	- mandatory parameter that specifies the thesaurus collection
-		(i. e. a folder) to fetch an item from.
-	<group> - optional parameter that specifies item category (i. e. a file).
-		It is assumed that the file returns a single entry.
-[/##]
-
-[set group _new]any[/set]
-[if group="any"]
-	{file "pv/thesaurus/{{get subj}}/*"}
-[/if]
-[else]
-	{file "pv/thesaurus/{{get subj}}/{{get group}}"}
-[/else]
-[unset subj]
+[file pv/utils/single]

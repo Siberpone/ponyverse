@@ -14,8 +14,8 @@
 [/##]
 
 [repeat n _sep=", "]{choose _weighted}
-	25|{file pv/thesaurus/adjective/descriptive} {file pv/get/single subj="face"}
-	45|{file pv/thesaurus/adjective/compliment} {file pv/get/single subj="face"}
-	15|{file pv/thesaurus/adjective/elemental} {file pv/get/single subj="face"}
-	15|{file pv/thesaurus/adjective/size} {file pv/get/single subj="face"}
+	25|{file pv/thesaurus/adjective/descriptive} {file pv/thesaurus/face/pony}
+	45|{file pv/thesaurus/adjective/compliment} {file pv/thesaurus/face/pony}
+	15|{file pv/thesaurus/adjective/elemental} {file pv/thesaurus/face/pony}
+	15|{file pv/thesaurus/adjective/size} {file pv/thesaurus/face/pony}
 {/choose}[/repeat]

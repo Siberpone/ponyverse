@@ -7,7 +7,7 @@
 [chance "{get body_c}"]{file pv/get/body n="{{get body_n}}"},[/chance]
 [chance "{get attire_c}"]{file pv/get/attire group="{{get attire_g}}" n="{{get attire_n}}"},[/chance]
 [chance "{get generic_c}"]{file pv/get/generic n="{{get generic_n}}"},[/chance]
-[chance "{get scenery_c}"]{file pv/get/scenery group="{{get scenery_g}}" n="{{get scenery_n}}"},[/chance]
+[chance "{get scenery_c}"]({file pv/get/scenery group="{{get scenery_g}}" n="{{get scenery_n}}"}:35),[/chance]
 [chance "{get medium_c}"]{file pv/get/medium group="{{get medium_g}}"},[/chance]
 [chance "{get style_c}"]{file pv/get/style n="{{get style_n}}" group="{{get style_g}}"},[/chance]
 (derpibooru_p_95:1.2)

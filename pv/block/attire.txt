@@ -8,16 +8,11 @@
 	TODO:
 		- extend and weigh related thesaurus
 		- introduce species-specific bias (for humanized/eqg)
-		- refactor grp usage
 
 	BLOCK QUALITY: average
 [/##]
 
-[set grp]{get group}[/set]
-
 [repeat n _sep=", "]{choose 1}
-wearing {file pv/get/single subj="attire" group="{{get grp}}"}
-{file pv/get/single subj="attire" group="{{get grp}}"}
+wearing {file pv/get/single cat="attire" sg="{{get group}}"}
+{file pv/get/single cat="attire" sg="{{get group}}"}
 {/choose}[/repeat]
-
-[unset grp]

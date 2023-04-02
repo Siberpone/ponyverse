@@ -10,4 +10,4 @@
 	BLOCK QUALITY: average
 [/##]
 
-[file pv/get/single subj="pose"]
+[file pv/get/single cat="pose"]

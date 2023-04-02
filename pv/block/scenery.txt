@@ -12,23 +12,20 @@
 			sometimes to the point where the character doesn't show up. Weeding out
 			"attention-grabbing" options from thesaurus also should help.
 		- expand related thesaurus
-		- refactor grp
 
 	BLOCK QUALITY: poor
 [/##]
 
 [if group="any"]
-	({choose n}
+	{choose n}
 		{file pv/thesaurus/scenery/biome} background
 		{file pv/thesaurus/adjective/weather} weather
 		{file pv/thesaurus/adjective/weather} {file pv/thesaurus/scenery/place} background
 		{file pv/thesaurus/scenery/place} at {file pv/thesaurus/scenery/time} background
 		{file pv/thesaurus/adjective/descriptive} {file pv/thesaurus/scenery/time}
 		{file pv/thesaurus/adjective/*} background
-	{/choose}:0.35)
+	{/choose}
 [/if]
 [else]
-	{set grp}{{get group}}{/set}
-	{repeat n _sep=", "}{{file pv/get/single subj="scenery" group="{get grp}"}}{/repeat}
-	{unset grp}
+	{repeat n _sep=", "}{{file pv/get/single cat="scenery" sg="{{{get group}}}"}}{/repeat}
 [/else]

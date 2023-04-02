@@ -13,7 +13,7 @@
 [set sg _new]any[/set]
 [set s_group _new][get sg][/set]
 
-[if s_group="any"]
+[if "s_group == 'any'"]
 	{file "pv/thesaurus/{{get category}}/*"}
 [/if]
 [else]

@@ -18,10 +18,10 @@ See README for more info and advanced usage tips or visit **[Ponyverse repo](htt
 [set custom _new _label="CUSTOM block" _placeholder="Type in your tags here"][/set]
 
 [# Pose Block ]
-[set pose_c _new _label="POSE Block Appearing Chance" _ui="slider" _minimum=0 _maximum=100 _step=5]60[/set]
+[set pose_c _new _label="POSE Block Appearing Chance" _ui="slider" _minimum=0 _maximum=100 _step=5]45[/set]
 
 [# Expression Block ]
-[set expression_c _new _label="EXPRESSION Block Appearing Chance" _ui="slider" _minimum=0 _maximum=100 _step=5]50[/set]
+[set expression_c _new _label="EXPRESSION Block Appearing Chance" _ui="slider" _minimum=0 _maximum=100 _step=5]35[/set]
 
 [# Facial Features Description Block ]
 [set face_c _new _label="FACE Block Appearing Chance" _ui="slider" _minimum=0 _maximum=100 _step=5]15[/set]

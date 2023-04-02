@@ -118,6 +118,11 @@ starlight glimmer, [file pv/get/pose], [file pv/get/scenery g="weather"]
 Soon&trade;
 
 ## Changelog
+#### 2023-04-02
+* tuned up presets a little bit and added a new one. **Note:** presets selector is a little wonky atm, use with caution.
+* updated attire block and expanded attire-related thesaurus.
+* refactored some backend stuff.
+
 #### 2023-03-31
 * **Breaking Change** Reworked blocks API to be more concise. See updated [examples](#using-individual-blocks-with-your-prompt).
 * **Breaking Change** Removed Setting block due to low/bad influence on the outputs. Actual good stuff from it has been moved to style/setting group.

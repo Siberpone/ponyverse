@@ -12,7 +12,4 @@
 	BLOCK QUALITY: average
 [/##]
 
-[repeat n _sep=", "]{choose 1}
-wearing {file pv/get/single cat="attire" sg="{{get group}}"}
-{file pv/get/single cat="attire" sg="{{get group}}"}
-{/choose}[/repeat]
+[repeat n _sep=", "]{chance 50}wearing {/chance}{file pv/get/single cat="attire" sg="{{get group}}"}[/repeat]

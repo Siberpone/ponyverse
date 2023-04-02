@@ -2,7 +2,6 @@
 [choose 1]
 lord of the rings|middle-earth universe
 conan the barbarian
-magic the gathering
 warcraft
 diablo
 my little pony

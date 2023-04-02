@@ -5,4 +5,20 @@ baseball cap
 wizard hat
 hat
 beanie
+glasses
+[chance 35]cool [/chance]sunglasses
+beret
+flight helmet
+bobble hat
+bowler
+service cap
+cowboy hat
+fedora
+flat cap
+garrison cap
+party hat
+sombrero
+ushanka
+crown
+helmet
 [/choose]

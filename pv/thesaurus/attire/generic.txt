@@ -5,10 +5,11 @@
 3|armor
 4|dress
 3|outfit
-2|leather jacket
+2|[chance 35]cool [/chance]leather jacket
 3|jacket
 2|power armor
 1|exoskeleton
 4|gown
 3|pants
+3|robe
 [/choose]

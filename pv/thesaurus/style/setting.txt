@@ -4,12 +4,14 @@ cyberpunk
 steampunk
 synthwave
 sovietwave
-military
 soviet
-wild west
 dystopian
 post-apocalyptic
 utopian
 dc universe
 marvel universe|mcu
+magic the gathering
+goth
+punk
+dieselpunk
 [/choose]

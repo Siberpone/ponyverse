@@ -7,4 +7,6 @@ stockings
 choker
 socks
 panties
+bondage
+corset
 [/choose]

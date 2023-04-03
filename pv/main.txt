@@ -12,6 +12,7 @@ See README for more info and advanced usage tips or visit **[Ponyverse repo](htt
 [set character _new _label="CHARACTER" _placeholder="Type in your character here or leave blank for random choice"]{file pv/get/character group="{{get character_g}}"}[/set]
 
 [# Species Block ]
+[set species_e _new _label="SPECIES Block enabled" _ui="checkbox"]1[/set]
 [set species _new _label="SPECIES" _placeholder="Type in desired species here or leave blank for automatic choice"]{file pv/get/species}[/set]
 
 [# Custom Block]

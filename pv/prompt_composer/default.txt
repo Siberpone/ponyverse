@@ -1,5 +1,7 @@
 [get character],
-[get species],
+[if species_e=1]
+	{get species},
+[/if]
 [file pv/block/custom]
 [chance "{get pose_c}"]{file pv/get/pose},[/chance]
 [chance "{get expression_c}"]{file pv/get/expression},[/chance]

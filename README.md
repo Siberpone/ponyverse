@@ -98,9 +98,13 @@ And that's it! "muh_fetish" should now be selectable from the "preset" drop-down
 ### Directly In The Prompt Textbox
 This is more of a CLI style method. The simplest use case would be to just type `[file pv/main]` into the Web UI's prompt textbox. That will randomly choose a character and generate a prompt with the default Ponyverse preset. You can customise various aspects of Ponyverse's behavior by passing variables like so:
 ```
-[file pv/main character="twilight sparkle" species="unicorn, pony" pose_c=35 setting_g=scifi generic_n=4]
+[file pv/main character="twilight sparkle" species="unicorn, pony" pose_c=35 style_g=artist generic_n=4]
 ```
-This sets the character to Twilight Sparkle; species to "alicorn, pony"; pose block appearing chance to 35%; setting block thematical group to "scifi" and generic block repeat number to 4. See [Blocks](#blocks) section for all available variables.
+This sets the character to Twilight Sparkle; species to "alicorn, pony"; pose block appearing chance to 35%; artistic style block thematical group to "artist" and generic block repeat number to 4. All available variables can be inferred from looking at the [Ponyverse GUI](#unprompted-wizard). Each contlrol has a brief description that is followed by an arrow and a variable name. They usually follow the universal format of blockname_x and have the following meaning:
+
+* **blockname_c** - chance that the block will appear in the prompt. Set to 0 to disable the block; set to 100 to always include the block;
+* **blockname_n** *(for some blocks)* - how many descriptions should the block generate;
+* **blockname_g** *(for some blocks)* - narrow generated description down to that thematic group (see [BLOCKS](BLOCKS.md) for available groups).
 
 ### Using Individual Blocks With Your Prompt
 Blocks can be injected into your own prompt direclty in the prompt textbox:
@@ -113,11 +117,27 @@ trixie trotting in the fields, unicorn, solo, [file pv/get/generic n=3], derpibo
 ```
 starlight glimmer, [file pv/get/pose], [file pv/get/scenery g="weather"]
 ```
+See [BLOCKS](BLOCKS.md) for in-depth description.
 
-## Blocks
-Soon&trade;
+## Future Plans
+- [ ] Rename current default Ponyverse GUI to "Ponyverse Discovery" (working title) to better reflect its tinker-oriented nature;
+- [ ] Introduce new default GUI for the less tinker-oriented users, that will feature a collection of high quality static prompts discovered with Ponyverse Discovery (~~no~~ pun intended);
+- [ ] Introduce "Ponyverse After Dark" - same as above, but NSFW;
+- [ ] Introduce features for easier multi-model support;
+- [ ] Fine tune for Pony Soup V2 and, possibly, Remix V2;
+- [ ] Fine tune for Astra's V5 when it arrives.
+
+## Contributing
+I'm always looking for ways to improve my work and open for some contructive criticism and suggestions. Here're some ways you can help make Ponyverse better:
+* Want to request a feature or found a bug? Create an [issue](issues).
+* Have an idea on how to improve Ponyverse or want to give some feedback or simply need help figuring it out? Open up a [discussion](discussions).
+
 
 ## Changelog
+#### 2023-04-03
+* added [blocks](BLOCKS.md) descriptions and sample usage section.
+* updated README with info on contributing and future plans.
+
 #### 2023-04-02
 * tuned up presets a little bit and added a new one. **Note:** presets selector is a little wonky atm, use with caution.
 * updated attire block and expanded attire-related thesaurus.

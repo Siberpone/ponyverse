@@ -3,6 +3,7 @@
 	Generates art style description.
 
 	<group> - specifies art style group to be used.
+	<n> - number of descriptions to generate.
 
 	TODO:
 		- consider narrowing down artists list

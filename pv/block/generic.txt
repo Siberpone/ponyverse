@@ -8,7 +8,7 @@
 	TODO:
 		- expand thesaurus
 		- refactor to make use of thesaurus folder structure instead of a hardcoded list
-	
+
 	BLOCK QUALITY: good
 [/##]
 

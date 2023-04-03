@@ -129,8 +129,8 @@ See [BLOCKS](BLOCKS.md) for in-depth description.
 
 ## Contributing
 I'm always looking for ways to improve my work and open for some contructive criticism and suggestions. Here're some ways you can help make Ponyverse better:
-* Want to request a feature or found a bug? Create an [issue](issues).
-* Have an idea on how to improve Ponyverse or want to give some feedback or simply need help figuring it out? Open up a [discussion](discussions).
+* Want to request a feature or found a bug? Create an [issue](https://github.com/Siberpone/ponyverse/issues).
+* Have an idea on how to improve Ponyverse or want to give some feedback or simply need help figuring it out? Open up a [discussion](https://github.com/Siberpone/ponyverse/discussions).
 
 
 ## Changelog

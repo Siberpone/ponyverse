@@ -82,10 +82,10 @@ Unfortunately, there's currently no way to add custom presets, other than manual
 [elif preset="muh_fetish"]
 [/elif]
 ```
-5. Paste your preset string (see [Saving Your Presets](#saving-your-presets)) inbetween the [elif] blocks from step 4:
+5. Paste your preset string (see [Saving Your Presets](#saving-your-presets)) inbetween the [elif] blocks from step 4 and **replace square brackets with curly ones** (it's very important that you do, otherwise it will bug out; nothing I can do about that, yet another Unprompted gimmick):
 ```
 [elif preset="muh_fetish"]
-	[file "pv/main" character_g=any pose_c=60 expression_c=50 face_c=15 face_n=1 body_c=20 body_n=2 setting_g=any setting_c=20 attire_c=20 generic_c=85 generic_n=3 scenery_g=any scenery_c=15 scenery_n=1 medium_g=any medium_c=75 style_g=any style_c=45 np_mode=append]
+	{file "pv/main" character_g=any pose_c=60 expression_c=50 face_c=15 face_n=1 body_c=20 body_n=2 setting_g=any setting_c=20 attire_c=20 generic_c=85 generic_n=3 scenery_g=any scenery_c=15 scenery_n=1 medium_g=any medium_c=75 style_g=any style_c=45 np_mode=append}
 [/elif]
 ```
 
@@ -135,11 +135,12 @@ I'm always looking for ways to improve my work and open for some contructive cri
 
 ## Changelog
 #### 2023-04-03
+* resolved preset selector issues, should work fine now.
 * added [blocks](BLOCKS.md) descriptions and sample usage section.
 * updated README with info on contributing and future plans.
 
 #### 2023-04-02
-* tuned up presets a little bit and added a new one. **Note:** presets selector is a little wonky atm, use with caution.
+* tuned up presets a little bit and added a new one. ~~**Note:** presets selector is a little wonky atm, use with caution.~~
 * updated attire block and expanded attire-related thesaurus.
 * refactored some backend stuff.
 

@@ -17,11 +17,11 @@ Select a preset from below and make some awesome-looking pone!
 [set species _new _label="SPECIES" _placeholder="Type in desired species here or leave blank for automatic choice"]{file pv/get/species}[/set]
 
 [if preset="default"]
-	[file "pv/main" character_g=any custom=solo pose_c=45 expression_c=35 face_c=15 face_n=1 body_c=20 body_n=2 attire_g=any attire_c=20 attire_n=1 generic_c=85 generic_n=3 scenery_g=any scenery_c=15 scenery_n=1 medium_g=any medium_c=75 style_g=any style_c=45 style_n=1 np_mode=append]
+	{file pv/prompt_composer/default character_g=any custom=solo pose_c=45 expression_c=35 face_c=15 face_n=1 body_c=20 body_n=2 attire_g=any attire_c=20 attire_n=1 generic_c=85 generic_n=3 scenery_g=any scenery_c=15 scenery_n=1 medium_g=any medium_c=75 style_g=any style_c=45 style_n=1 np_mode=append}
 [/if]
 [elif preset="pure_art"]
-	[file "pv/main" character_g=any custom=solo pose_c=20 expression_c=20 face_c=0 face_n=1 body_c=0 body_n=1 attire_g=any attire_c=10 attire_n=1 generic_c=0 generic_n=1 scenery_g=any scenery_c=15 scenery_n=1 medium_g=any medium_c=100 style_g=any style_c=100 style_n=3 np_mode=append]
+	{file pv/prompt_composer/default character_g=any custom=solo pose_c=20 expression_c=20 face_c=0 face_n=1 body_c=0 body_n=1 attire_g=any attire_c=10 attire_n=1 generic_c=0 generic_n=1 scenery_g=any scenery_c=15 scenery_n=1 medium_g=any medium_c=100 style_g=any style_c=100 style_n=3 np_mode=append}
 [/elif]
 [elif preset="poma-like"]
-	[file "pv/main" character_g=any custom="pony related" pose_c=0 expression_c=0 face_c=0 face_n=1 body_c=0 body_n=1 attire_g=any attire_c=0 attire_n=1 generic_c=100 generic_n=6 scenery_g=any scenery_c=0 scenery_n=1 medium_g=any medium_c=0 style_g=artist style_c=100 style_n=3 np_mode="use_mine" np="sfm, anthro, (bad anatomy compression artifacts (bitcoin:0.4) (salvador dali:0.5) CCTV surveillance sex penetration:1.2) ugly poor quality deformed (distorted:0.9) nft"]
+	{file pv/prompt_composer/default character_g=any custom="pony related" pose_c=0 expression_c=0 face_c=0 face_n=1 body_c=0 body_n=1 attire_g=any attire_c=0 attire_n=1 generic_c=100 generic_n=6 scenery_g=any scenery_c=0 scenery_n=1 medium_g=any medium_c=0 style_g=artist style_c=100 style_n=3 np_mode="use_mine" np="sfm, anthro, (bad anatomy compression artifacts (bitcoin:0.4) (salvador dali:0.5) CCTV surveillance sex penetration:1.2) ugly poor quality deformed (distorted:0.9) nft"}
 [/elif]

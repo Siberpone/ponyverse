@@ -12,4 +12,20 @@
 	BLOCK QUALITY: average
 [/##]
 
-[repeat n _sep=", "]{chance 50}wearing {/chance}{file pv/get/single cat="attire" sg="{{get group}}"}[/repeat]
+[if "species == 'humanized' or species == 'equestria girls'"]
+	{set s}human{/set}
+[/if]
+[else]
+	{set s}pony{/set}
+[/else]
+
+[if "group == 'any'"]
+	{set glob}*-{{get s}}*{/set}
+[/if]
+[else]
+	{set glob}{{get group}}*-{{get s}}*{/set}
+[/else]
+
+[repeat n _sep=", "]{chance 50}wearing {/chance}{file "pv/thesaurus/attire/{{get glob}}"}[/repeat]
+
+[unset s glob]

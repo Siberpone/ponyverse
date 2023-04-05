@@ -135,7 +135,8 @@ I'm always looking for ways to improve my work and open for some contructive cri
 
 ## Changelog
 #### 2023-04-05
-* **Breaking Change** reworked body and pose blocks to generate species-specific (pony/humanized) descriptions. Also added NSFW level options.
+* **Breaking Change** reworked Attire, Body and Pose blocks to generate species-specific (pony/humanized) descriptions.
+* Added NSFW level control to Body and Pose blocks.
 
 #### 2023-04-03
 * added species block toggle.

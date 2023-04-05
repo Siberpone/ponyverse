@@ -1,12 +1,10 @@
 [choose 1]
 lingerie
-garters
+garter
 garter belts
 thigh highs
 stockings
 choker
 socks
 panties
-bondage
-corset
 [/choose]

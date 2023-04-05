@@ -117,7 +117,7 @@ large legs, glowing body, amazing plot
 > This is meant to be more of a wacky/zany kind of block and it can produce some starange (but often funny) images.
 
 ### Attire
-Generates description of a character's attire. Attire group can be specified to narrow down selection. Supports repeat count.
+Generates description of a character's attire. If `species` variable is set or passed, it will automatically choose either pony-specific or humanized/eqg-specific attire descriptions. Attire group can be specified to narrow down selection. Supports repeat count.
 
 Example usage:
 ```

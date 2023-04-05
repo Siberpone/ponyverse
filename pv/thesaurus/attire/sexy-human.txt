@@ -1,0 +1,33 @@
+[choose 1]
+lingerie
+garter
+garter belts
+thigh highs
+stockings
+choker
+socks
+panties
+bdsm
+corset
+babydoll
+basque
+bikini
+bodystocking
+bodysuit
+bodice
+bustier
+camiknickers
+chemise
+g-string|thong
+hoisery
+negligee
+nightgown
+peignoir
+robe
+teddy
+stringbody
+tanga
+torsolette
+unitard
+leotard
+[/choose]

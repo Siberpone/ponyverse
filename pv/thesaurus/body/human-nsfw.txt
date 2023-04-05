@@ -1,14 +1,6 @@
 [# Body parts]
 [choose _weighted]
-2|hair
 1|skin
-1|legs
-1|feet
-1|head
-2|face
-2|body
-1|arms
-1|hands
 4|ass
 3|butt
 5|tits

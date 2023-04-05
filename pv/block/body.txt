@@ -18,9 +18,12 @@
 	{set s}pony{/set}
 [/else]
 
-[if "body_nsfw == 1"]
-	{set b_group}{{get s}}-nsfw{/set}
+[if group="allow_nsfw"]
+	{set b_group}{{get s}}-*{/set}
 [/if]
+[elif group="nsfw_only"]
+	{set b_group}{{get s}}-nsfw{/set}
+[/elif]
 [else]
 	{set b_group}{{get s}}-sfw{/set}
 [/else]

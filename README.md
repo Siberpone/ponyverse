@@ -134,6 +134,9 @@ I'm always looking for ways to improve my work and open for some contructive cri
 
 
 ## Changelog
+#### 2023-04-05
+* **Breaking Change** reworked body block to generate species-specific (pony/humanized) descriptions. Also added NSFW level options.
+
 #### 2023-04-03
 * added species block toggle.
 * resolved preset selector issues, should work fine now.

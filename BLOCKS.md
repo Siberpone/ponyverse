@@ -85,14 +85,20 @@ fiery eyes, large ears
 > This is meant to be more of a wacky/zany kind of block and it can produce some starange (but often funny) images.
 
 ### Body
-Generates a random body feature description. If `species` variable is set or passed, it will automatically choose either pony-specific or humanized/eqg-specific body descriptions. NSFW descriptions can be toggled with `body_nsfw` variable. Supports repeat count.
+Generates a random body feature description. If `species` variable is set or passed, it will automatically choose either pony-specific or humanized/eqg-specific body descriptions. Supports repeat count.
 
 Example usage:
 ```
 twilight sparkle trotting through the woods, solo, [file pv/get/body]
 applejack, [file pv/get/body n=3], derpibooru_p_95
-rarity, humanized, [file pv/get/body species=humanized body_nsfw=1 n=2]
+rarity, humanized, [file pv/get/body species=humanized g=allow_nsfw n=3]
 ```
+
+Available groups: `sfw_only`, `allow_nsfw` and `nsfw_only`.
+
+> **Warning**
+>
+> Selecting `sfw_only` doesn't guarantee you from seeing some lewdness in the outputs. It simply guarantees that the block won't generate anything spicy. But outputs can be affected by other factors, such as: artists, intrinsic model biases, other blocks and so on.
 
 Sample output:
 ```

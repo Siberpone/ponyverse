@@ -4,10 +4,31 @@
 
 	TODO:
 		- introduce "secondary" pose description ("raised hoof", "crossed legs", etc.)
-		- introduce species-specific groups (for humanized/eqg in particular)
 		- tune thesaurus weights
-	
+		- consider introducing repeat count
+		- NSFW thesaurus needs further tuning and expansion due low output influence.
+		- DRY related thesaurus
+
 	BLOCK QUALITY: average
 [/##]
 
-[file pv/get/single cat="pose"]
+[if "species == 'humanized' or species == 'equestria girls'"]
+	{set s}human{/set}
+[/if]
+[else]
+	{set s}pony{/set}
+[/else]
+
+[if group="allow_nsfw"]
+	{set p_group}{{get s}}-*{/set}
+[/if]
+[elif group="nsfw_only"]
+	{set p_group}{{get s}}-nsfw{/set}
+[/elif]
+[else]
+	{set p_group}{{get s}}-sfw{/set}
+[/else]
+
+[file "pv/thesaurus/pose/{get p_group}"]
+
+[unset s p_group]

@@ -11,4 +11,7 @@ running
 rearing
 jumping
 sneaking
+lying down
+posing
+striking a pose
 [/choose]

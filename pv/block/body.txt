@@ -7,6 +7,7 @@
 	TODO:
 		- expand and categorize related thesaurus
 		- tune thesaurus weights to favor better adjective+body part combos
+		- DRY related thesaurus
 
 	BLOCK QUALITY: average
 [/##]

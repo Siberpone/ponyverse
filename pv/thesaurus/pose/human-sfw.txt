@@ -1,0 +1,14 @@
+[# Character's actions]
+[choose 1]
+walking
+standing
+dancing
+sitting
+running
+jumping
+sneaking
+lying down
+crouching
+posing
+striking a pose
+[/choose]

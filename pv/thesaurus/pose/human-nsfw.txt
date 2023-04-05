@@ -1,0 +1,9 @@
+[# Character's actions]
+[choose 1]
+seductive pose
+{chance 50}lying {/chance}on back
+spreading
+missionary position
+doggie style
+hand on hip
+[/choose]

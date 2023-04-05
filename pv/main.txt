@@ -19,6 +19,7 @@ See README for more info and advanced usage tips or visit **[Ponyverse repo](htt
 [set custom _new _label="CUSTOM block" _placeholder="Type in your tags here"][/set]
 
 [# Pose Block ]
+[set pose_g _new _label="POSE Group" _choices="sfw_only|allow_nsfw|nsfw_only" _ui="dropdown"]sfw_only[/set]
 [set pose_c _new _label="POSE Block Appearing Chance" _ui="slider" _minimum=0 _maximum=100 _step=5]45[/set]
 
 [# Expression Block ]

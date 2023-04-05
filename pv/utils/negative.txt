@@ -3,7 +3,12 @@
 	TODO: add description
 [/##]
 
-[set np_base]derpibooru_p_low, sfm, (anime:0.5), (furry:0.6), anthro, loli, hoers, (horse:0.45), (dog:0.5), (cat:0.5)[/set]
+[if "species == 'humanized' or species == 'equesrtia girls'"]
+	{set np_base}derpibooru_p_low, sfm, anime, loli, anthro, ugly, deformed{/set}
+[/if]
+[else]
+	{set np_base}derpibooru_p_low, sfm, (anime:0.5), (furry:0.6), anthro, loli, hoers, (horse:0.45), (dog:0.5), (cat:0.5){/set}
+[/else]
 
 [if np_mode="use_mine"]
 	{set negative_prompt}{get np}{/set}

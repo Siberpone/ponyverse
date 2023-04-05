@@ -135,19 +135,20 @@ I'm always looking for ways to improve my work and open for some contructive cri
 
 ## Changelog
 #### 2023-04-05
+* Tuned a preliminary humanized/eqg negative prompt.
 * **Breaking Change** reworked Attire, Body and Pose blocks to generate species-specific (pony/humanized) descriptions.
 * Added NSFW level control to Body and Pose blocks.
 
 #### 2023-04-03
-* added species block toggle.
-* resolved preset selector issues, should work fine now.
-* added [blocks](BLOCKS.md) descriptions and sample usage section.
-* updated README with info on contributing and future plans.
+* Added species block toggle.
+* Resolved preset selector issues, should work fine now.
+* Added [blocks](BLOCKS.md) descriptions and sample usage section.
+* Updated README with info on contributing and future plans.
 
 #### 2023-04-02
-* tuned up presets a little bit and added a new one. ~~**Note:** presets selector is a little wonky atm, use with caution.~~
-* updated attire block and expanded attire-related thesaurus.
-* refactored some backend stuff.
+* Tuned up presets a little bit and added a new one. ~~**Note:** presets selector is a little wonky atm, use with caution.~~
+* Updated attire block and expanded attire-related thesaurus.
+* Refactored some backend stuff.
 
 #### 2023-03-31
 * **Breaking Change** Reworked blocks API to be more concise. See updated [examples](#using-individual-blocks-with-your-prompt).

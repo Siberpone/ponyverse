@@ -1,0 +1,18 @@
+[# Body parts]
+[choose _weighted]
+1|fur
+1|coat
+3|plot
+1|legs
+1|hooves
+1|head
+1|face
+1|body
+1|mane and tail 
+2|butt
+3|ponut
+3|vulva
+5|ponut and vulva
+2|teats
+3|dock
+[/choose]

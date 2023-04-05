@@ -24,11 +24,12 @@ See README for more info and advanced usage tips or visit **[Ponyverse repo](htt
 [# Expression Block ]
 [set expression_c _new _label="EXPRESSION Block Appearing Chance" _ui="slider" _minimum=0 _maximum=100 _step=5]35[/set]
 
-[# Facial Features Description Block ]
+[# Facial Block ]
 [set face_c _new _label="FACE Block Appearing Chance" _ui="slider" _minimum=0 _maximum=100 _step=5]15[/set]
 [set face_n _new _label="FACE Descriptions Number" _ui="slider" _minimum=1 _maximum=5 _step=1]1[/set]
 
-[# Body Features Description Block ]
+[# Body Block ]
+[set body_nsfw _new _label="BODY enable NSFW" _ui="checkbox"]0[/set]
 [set body_c _new _label="BODY Block Appearing Chance" _ui="slider" _minimum=0 _maximum=100 _step=5]20[/set]
 [set body_n _new _label="BODY Descriptions Number" _ui="slider" _minimum=1 _maximum=5 _step=1]2[/set]
 

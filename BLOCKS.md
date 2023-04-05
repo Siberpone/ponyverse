@@ -1,5 +1,5 @@
 ## Blocks
-This section describes available blocks and how to use them in your prompts. 
+This section describes available blocks and how to use them in your prompts.
 
 ### Character
 Fetches a random character from the thesaurus. Character group can be specified to narrow down selection.
@@ -19,7 +19,7 @@ starlight glimmer
 ```
 
 ### Species
-Generates species description. If "character" variable is set or passed, it will favor character's native species. Furthermore, if chosen species ends up being "pony", it will be decorated with pony kind (like "unicorn", for example).
+Generates species description. If `character` variable is set or passed, it will favor character's native species. Furthermore, if chosen species ends up being "pony", it will be decorated with pony kind (like "unicorn", for example).
 
 Example usage:
 ```
@@ -85,12 +85,13 @@ fiery eyes, large ears
 > This is meant to be more of a wacky/zany kind of block and it can produce some starange (but often funny) images.
 
 ### Body
-Generates a random body feature description. Supports repeat count.
+Generates a random body feature description. If `species` variable is set or passed, it will automatically choose either pony-specific or humanized/eqg-specific body descriptions. NSFW descriptions can be toggled with `body_nsfw` variable. Supports repeat count.
 
 Example usage:
 ```
 twilight sparkle trotting through the woods, solo, [file pv/get/body]
 applejack, [file pv/get/body n=3], derpibooru_p_95
+rarity, humanized, [file pv/get/body species=humanized body_nsfw=1 n=2]
 ```
 
 Sample output:

@@ -1,0 +1,12 @@
+[# Body parts]
+[choose _weighted]
+4|hair
+4|skin
+3|legs
+2|feet
+2|head
+5|face
+5|body
+2|arms
+1|hands
+[/choose]

@@ -4,6 +4,6 @@
 3|kirin
 5|changeling
 2|humanized
-2|equestria girl
+2|equestria girls
 1|dragon
 [/choose]

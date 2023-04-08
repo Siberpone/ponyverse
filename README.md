@@ -134,6 +134,9 @@ I'm always looking for ways to improve my work and open for some contructive cri
 
 
 ## Changelog
+#### 2023-04-08
+* Added shorthands for blocks API. See [blocks](BLOCKS.md) for details.
+
 #### 2023-04-05
 * Tuned a preliminary humanized/eqg negative prompt.
 * **Breaking Change** reworked Attire, Body and Pose blocks to generate species-specific (pony/humanized) descriptions.

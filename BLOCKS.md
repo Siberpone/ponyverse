@@ -1,13 +1,15 @@
 ## Blocks
-This section describes available blocks and how to use them in your prompts.
+This section describes available blocks and how to use them in your prompts. Blocks can be called by typing `[file pv/get/blockname]` into the prompt where you want the block content to appear. Blocks also have shorthands for convinience which usually come in the form of `[file pv/x]`.
 
 ### Character
 Fetches a random character from the thesaurus. Character group can be specified to narrow down selection.
 
+Shorthand: `[file pv/c]`.
+
 Example usage:
 ```
 [file pv/get/character] wearing a funny hat
-[file pv/get/character g=mane6], solo, pony, looking back at you, derpibooru_p_95
+[file pv/c g=mane6], solo, pony, looking back at you, derpibooru_p_95
 ```
 
 Available groups: `mane6`, `cmc`, `support_cast`, `villan`, `background` and `eqg`.
@@ -21,10 +23,12 @@ starlight glimmer
 ### Species
 Generates species description. If `character` variable is set or passed, it will favor character's native species. Furthermore, if chosen species ends up being "pony", it will be decorated with pony kind (like "unicorn", for example).
 
+Shorthand: `[file pv/sp]`.
+
 Example usage:
 ```
 rainbow dash, [file pv/get/species character="rainbow dash"], flying in the sky
-[file pv/get/species], magenta body, cyan mane and tail, smiling at you
+[file pv/s], magenta body, cyan mane and tail, smiling at you
 ```
 
 Sample output:
@@ -40,10 +44,12 @@ This block is meant to be used in GUI only. It simply outputs whatever the "cust
 ### Pose
 Generates character pose description. If `species` variable is set or passed, it will automatically choose either pony-specific or humanized/eqg-specific pose descriptions.
 
+Shorthand: `[file pv/p]`.
+
 Example usage:
 ```
 trixie, unicorn, solo, [file pv/get/pose], excited, looking at you
-adagio dazzle, equestria girls, [file pv/get/pose species="eqestria girls" g=nsfw_only]
+adagio dazzle, equestria girls, [file pv/p species="eqestria girls" g=nsfw_only]
 ```
 
 Available groups: `sfw_only`, `allow_nsfw` and `nsfw_only`.
@@ -62,9 +68,12 @@ galloping
 ### Expression
 Generates emotion or facial expression description.
 
+Shorthand: `[file pv/e]`.
+
 Example usage:
 ```
 princess luna, [file pv/get/expression], derpibooru_p_95
+princess luna, [file pv/e], derpibooru_p_95
 ```
 
 Sample output:
@@ -76,10 +85,12 @@ happy
 ### Face
 Generates a random facial feature description. Supports repeat count.
 
+Shorthand: `[file pv/f]`.
+
 Example usage:
 ```
 pinkie pie prancing in a meadow, solo, [file pv/get/face]
-fluttershy, [file pv/get/face n=3], cute
+fluttershy, [file pv/f n=3], cute
 ```
 
 Sample output:
@@ -94,11 +105,13 @@ fiery eyes, large ears
 ### Body
 Generates a random body feature description. If `species` variable is set or passed, it will automatically choose either pony-specific or humanized/eqg-specific body descriptions. Supports repeat count.
 
+Shorthand: `[file pv/b]`.
+
 Example usage:
 ```
 twilight sparkle trotting through the woods, solo, [file pv/get/body]
 applejack, [file pv/get/body n=3], derpibooru_p_95
-rarity, humanized, [file pv/get/body species=humanized g=allow_nsfw n=3]
+rarity, humanized, [file pv/b species=humanized g=allow_nsfw n=3]
 ```
 
 Available groups: `sfw_only`, `allow_nsfw` and `nsfw_only`.
@@ -119,10 +132,12 @@ large legs, glowing body, amazing plot
 ### Attire
 Generates description of a character's attire. If `species` variable is set or passed, it will automatically choose either pony-specific or humanized/eqg-specific attire descriptions. Attire group can be specified to narrow down selection. Supports repeat count.
 
+Shorthand: `[file pv/a]`.
+
 Example usage:
 ```
 scootaloo, pegasus, solo, [file get/pv/attire]
-princess celestia, humanized, solo, [file pv/get/attire n=3 g=sexy], derpibooru_p_95
+princess celestia, humanized, solo, [file pv/a n=3 g=sexy], derpibooru_p_95
 ```
 
 Available groups: `generic`, `headwear`, `outfits` and `sexy`.
@@ -137,9 +152,12 @@ wearing cool leather jacket, sunglasses, wearing beanie
 ### Generic
 Generates generic description or "magical" buzzwords and phrases we all came to know and love. Supports repeat count.
 
+Shorthand: `[file pv/g]`.
+
 Example usage:
 ```
 trixie trotting in the fields, unicorn, solo, [file pv/get/generic n=5], derpibooru_p_95
+starlight glimmer, unicorn, solo, [file pv/g n=5], derpibooru_p_95
 ```
 
 Sample output:
@@ -151,11 +169,13 @@ astonishing details, vibrant cinematic lighting, trending on artstation, 4K, cou
 ### Scenery
 Generates scenery description. Attire group can be specified to narrow down selection. Supports repeat count.
 
+Shorthand: `[file pv/bg]`.
+
 Example usage:
 ```
 apple bloom, pony, solo, [file pv/get/scenery n=2]
 twilight sparkle walking in a park, [file pv/get/scenery g=weather], derpibooru_p_95
-princess celestia, alicorn, pony, solo, prancing, ([file pv/get/scenery n=2 g=nature]:0.4), trending on artstation
+princess celestia, alicorn, pony, solo, prancing, ([file pv/bg n=2 g=nature]:0.4), trending on artstation
 ```
 
 Available groups: `biome`, `nature`, `place`, `time` and `weather`.
@@ -176,10 +196,12 @@ amazing background
 ### Medium
 Generates a random art medium description. Medium group can be specified to narrow down selection.
 
+Shorthand: `[file pv/m]`.
+
 Example usage:
 ```
 rainbow dash, pegasus, solo, [file pv/get/medium]
-a beautiful [file pv/get/medium g=painting] of happy princess cadance
+a beautiful [file pv/m g=painting] of happy princess cadance
 ```
 
 Available groups: `painting`, `drawing`, `realistic` and `other`.
@@ -196,10 +218,12 @@ digital drawing
 ### Style
 Generates art style description. Style group can be specified to narrow down selection. Supports repeat count.
 
+Shorthand: `[file pv/s]`.
+
 Example usage:
 ```
 fluttershy, pegasus, solo, smiling at you, blushing, [file pv/get/style]
-princess luna flying in the night sky, [file pv/get/style n=3 g=artist]
+princess luna flying in the night sky, [file pv/s n=3 g=artist]
 ```
 
 Available groups: `artist`, `art_movement` and `setting`.

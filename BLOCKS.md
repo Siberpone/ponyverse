@@ -66,21 +66,28 @@ galloping
 > Selecting `sfw_only` doesn't guarantee you from seeing some lewdness in the outputs. It simply guarantees that the block won't generate anything spicy. But outputs can be affected by other factors, such as: artists, intrinsic model biases, other blocks and so on.
 
 ## Expression
-Generates emotion or facial expression description.
+Generates emotion or facial expression description. Expression group can be specified to narrow down selection. Supports repeat count.
 
 Shorthand: `[file pv/e]`.
+
+Available groups: `emotional` and `facial`.
 
 Example usage:
 ```
 princess luna, [file pv/get/expression], derpibooru_p_95
-princess luna, [file pv/e], derpibooru_p_95
+princess luna, [file pv/e g=facial n=2], derpibooru_p_95
 ```
 
 Sample output:
 ```
 looking back at you
 happy
+angry, lidded eyes
 ```
+
+> **Note**
+>
+> When repeat count is greater than 1 and group is unspecified, the block will generate 1 emotional description and `n - 1` facial descriptions. This is done to reduce nonsensical outputs like `happy, angry`.
 
 ## Face
 Generates a random facial feature description. Supports repeat count.
@@ -167,7 +174,7 @@ astonishing details, vibrant cinematic lighting, trending on artstation, 4K, cou
 ```
 
 ## Scenery
-Generates scenery description. Attire group can be specified to narrow down selection. Supports repeat count.
+Generates scenery description. Scenery group can be specified to narrow down selection. Supports repeat count.
 
 Shorthand: `[file pv/bg]`.
 

@@ -135,9 +135,10 @@ I'm always looking for ways to improve my work and open for some contructive cri
 
 # Changelog
 #### 2023-04-08
-* Renamed Ponyverse template to "Ponyverse Discovery".
+* **Breaking Change** Added groups and repeatability to expressions block.
 * **Breaking Change** Moved GUI templates to views/. Use `[file pv/run]` instead of `[file pv/main]`.
 * Added shorthands for blocks API. See [blocks](BLOCKS.md) for details.
+* Renamed Ponyverse template to "Ponyverse Discovery".
 
 #### 2023-04-05
 * Tuned a preliminary humanized/eqg negative prompt.

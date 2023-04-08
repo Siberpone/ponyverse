@@ -6,7 +6,9 @@ open smile
 looking at you with [choose 1]disdain|pity|love|amazement|terror|awe|horror[/choose]
 seductive look
 blushing
-dejected
-puzzled
-quizzical
+eyes closed
+open mouth
+lidded eyes
+bedroom eyes
+seductive look
 [/choose]

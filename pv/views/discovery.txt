@@ -23,7 +23,9 @@ See README for more info and advanced usage tips or visit **[Ponyverse repo](htt
 [set pose_c _new _label="POSE Block Appearing Chance" _ui="slider" _minimum=0 _maximum=100 _step=5]45[/set]
 
 [# Expression Block ]
+[set expression_g _new _label="EXPRESSION Group" _choices="any|emotional|facial" _ui="dropdown"]any[/set]
 [set expression_c _new _label="EXPRESSION Block Appearing Chance" _ui="slider" _minimum=0 _maximum=100 _step=5]35[/set]
+[set expression_n _new _label="EXPRESSION Descriptions Number" _ui="slider" _minimum=1 _maximum=5 _step=1]1[/set]
 
 [# Facial Block ]
 [set face_c _new _label="FACE Block Appearing Chance" _ui="slider" _minimum=0 _maximum=100 _step=5]15[/set]

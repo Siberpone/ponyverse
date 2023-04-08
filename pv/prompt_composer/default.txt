@@ -4,7 +4,7 @@
 [/if]
 [file pv/block/custom]
 [chance "{get pose_c}"]{file pv/get/pose group="{{get pose_g}}"},[/chance]
-[chance "{get expression_c}"]{file pv/get/expression},[/chance]
+[chance "{get expression_c}"]{file pv/get/expression group="{{get expression_g}}" n="{{get expression_n}}"},[/chance]
 [chance "{get face_c}"]{file pv/get/face n="{{get face_n}}"},[/chance]
 [chance "{get body_c}"]{file pv/get/body group="{{get body_g}}" n="{{get body_n}}"},[/chance]
 [chance "{get attire_c}"]{file pv/get/attire group="{{get attire_g}}" n="{{get attire_n}}"},[/chance]

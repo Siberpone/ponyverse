@@ -10,6 +10,7 @@ cautious
 cheerful
 chilly
 comfortable
+dejected
 dreadful
 excited
 festive
@@ -21,8 +22,11 @@ irritated
 jolly
 optimistic
 pessimistic
+puzzled
+quizzical
 reluctant
 shy
+sleepy
 tense
 terrified
 tired

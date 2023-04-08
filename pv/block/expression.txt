@@ -8,4 +8,14 @@
 	BLOCK QUALITY: good
 [/##]
 
-[file pv/get/single cat="expression"]
+[if group="any"]
+	{if n=1}
+		{file pv/thesaurus/expression/*}
+	{/if}
+	{else}
+		{{file pv/thesaurus/expression/emotional}}, {{repeat "n - 1" _sep=", "}}{{{file pv/thesaurus/expression/facial}}}{{/repeat}}
+	{/else}
+[/if]
+[else]
+	{repeat n _sep=", "}{{file "pv/thesaurus/expression/{{{get group}}}"}}{/repeat}
+[/else]

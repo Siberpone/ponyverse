@@ -1,6 +1,6 @@
-[template name="Ponyverse"]
-## Welcome to Ponyverse!
-The configurable pony prompt helper. Shuffle some sliders around and make some awesome-looking pone or check out the presets by selecting the "Ponyverse Presets" from the "Select Function" drop-down above.
+[template name="Ponyverse Discovery"]
+## Welcome to Ponyverse Discovery!
+The configurable pony prompt helper. Here you can tinker and configure every aspect of the Ponyverse prompt to discover new cool styles or tune it to suit your personal preferences. Now go shuffle some sliders around and make some awesome-looking pone! You can also check out the presets by selecting the "Ponyverse Presets" from the "Select Function" drop-down above.
 
 See README for more info and advanced usage tips or visit **[Ponyverse repo](https://github.com/Siberpone/ponyverse)** over on GitHub. Have fun!
 

@@ -29,8 +29,8 @@ Ponyverse prompt is contructed form individualy configurable thematic blocks tha
 >
 > Ensure that the Unprompted extension is enabled.
 
-### Unprompted Wizard
-This is the prefered method as it provides a handy GUI for Ponyverse. You can expose it by opening the "Unprompted" fold in the Web UI's left panel and then opening the "Wizard" fold. After that, select "Ponyverse" from the "Select Function" drop-down and that should reveal the GUI, as shown in the screenshot below:
+### Ponyverse Discovery
+This is the prefered method as it provides a handy GUI for Ponyverse. You can expose it by opening the "Unprompted" fold in the Web UI's left panel and then opening the "Wizard" fold. After that, select "Ponyverse Discovery" from the "Select Function" drop-down and that should reveal the GUI, as shown in the screenshot below:
 
 ![GUI scereenshot](wizard.jpg)
 
@@ -96,9 +96,9 @@ And that's it! "muh_fetish" should now be selectable from the "preset" drop-down
 > This file will be overwritten upon updating, so it's a good idea to copy it someplace else.
 
 ### Directly In The Prompt Textbox
-This is more of a CLI style method. The simplest use case would be to just type `[file pv/main]` into the Web UI's prompt textbox. That will randomly choose a character and generate a prompt with the default Ponyverse preset. You can customise various aspects of Ponyverse's behavior by passing variables like so:
+This is more of a CLI style method. The simplest use case would be to just type `[file pv/run]` into the Web UI's prompt textbox. That will randomly choose a character and generate a prompt with the default Ponyverse preset. You can customise various aspects of Ponyverse's behavior by passing variables like so:
 ```
-[file pv/main character="twilight sparkle" species="unicorn, pony" pose_c=35 style_g=artist generic_n=4]
+[file pv/run character="twilight sparkle" species="unicorn, pony" pose_c=35 style_g=artist generic_n=4]
 ```
 This sets the character to Twilight Sparkle; species to "alicorn, pony"; pose block appearing chance to 35%; artistic style block thematical group to "artist" and generic block repeat number to 4. All available variables can be inferred from looking at the [Ponyverse GUI](#unprompted-wizard). Each contlrol has a brief description that is followed by an arrow and a variable name. They usually follow the universal format of blockname_x and have the following meaning:
 
@@ -120,7 +120,7 @@ starlight glimmer, [file pv/get/pose], [file pv/get/scenery g="weather"]
 See [BLOCKS](BLOCKS.md) for in-depth description.
 
 ## Future Plans
-- [ ] Rename current default Ponyverse GUI to "Ponyverse Discovery" (working title) to better reflect its tinker-oriented nature;
+- [x] Rename current default Ponyverse GUI to "Ponyverse Discovery" to better reflect its tinker-oriented nature;
 - [ ] Introduce new default GUI for the less tinker-oriented users, that will feature a collection of high quality static prompts discovered with Ponyverse Discovery (~~no~~ pun intended);
 - [ ] Introduce "Ponyverse After Dark" - same as above, but NSFW;
 - [ ] Introduce features for easier multi-model support;
@@ -135,6 +135,8 @@ I'm always looking for ways to improve my work and open for some contructive cri
 
 ## Changelog
 #### 2023-04-08
+* Renamed Ponyverse template to "Ponyverse Discovery".
+* **Breaking Change** Moved GUI templates to views/. Use `[file pv/run]` instead of `[file pv/main]`.
 * Added shorthands for blocks API. See [blocks](BLOCKS.md) for details.
 
 #### 2023-04-05

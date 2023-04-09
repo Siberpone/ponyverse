@@ -5,17 +5,22 @@
 	<n> - number of descriptions to generate.
 
 	TODO:
-		- expand related thesaurus
-		- tune weights
-		- see how to improve adjective+face part combos coherency
-		- come up with different types of face descriptions
 
 	BLOCK QUALITY: average
 [/##]
 
+[if "species == 'humanized' or species == 'equestria girls'"]
+	{set s}human{/set}
+[/if]
+[else]
+	{set s}pony{/set}
+[/else]
+
 [repeat n _sep=", "]{choose _weighted}
-	25|{file pv/thesaurus/adjective/descriptive} {file pv/thesaurus/face/pony}
-	45|{file pv/thesaurus/adjective/compliment} {file pv/thesaurus/face/pony}
-	15|{file pv/thesaurus/adjective/elemental} {file pv/thesaurus/face/pony}
-	15|{file pv/thesaurus/adjective/size} {file pv/thesaurus/face/pony}
+	25|{file pv/thesaurus/adjective/descriptive} {file "pv/thesaurus/face/{{get s}}"}
+	45|{file pv/thesaurus/adjective/compliment} {file "pv/thesaurus/face/{{get s}}"}
+	15|{file pv/thesaurus/adjective/elemental} {file "pv/thesaurus/face/{{get s}}"}
+	15|{file pv/thesaurus/adjective/size} {file "pv/thesaurus/face/{{get s}}"}
 {/choose}[/repeat]
+
+[unset s]

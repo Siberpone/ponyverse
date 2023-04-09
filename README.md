@@ -142,6 +142,7 @@ I'm always looking for ways to improve my work and open for some contructive cri
 
 # Changelog
 #### 2023-04-09
+* Added species-awareness (human/pony) to Face block.
 * Weighted descriptive adjectives.
 * Weighted and pruned Expressions thesaurus.
 

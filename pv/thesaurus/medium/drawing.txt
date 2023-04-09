@@ -5,7 +5,8 @@ digital [get submedium]
 pencil [get submedium]
 charcoal [get submedium]
 ink [get submedium]
-pen and paper [get submedium]
+pen [get submedium]
+crayon [get submedium]
 pencil sketch
 sketch
 lineart

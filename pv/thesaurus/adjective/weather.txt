@@ -4,4 +4,5 @@ snowy
 cloudy
 sunny
 gloomy
+chilly
 [/choose]

@@ -5,6 +5,9 @@ trees
 river
 lake
 pine trees
+fir trees
+valley
+ravine
 canyon
 sea
 ocean

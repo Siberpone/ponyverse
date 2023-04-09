@@ -1,12 +1,15 @@
 [# Generic Adjective]
 [choose 1]
 colorful
+comfortable
 complex
 delicate
+dreadful
 dreamlike
 elegant
 epic
 expressive
+festive
 glamorous
 glowing
 lush

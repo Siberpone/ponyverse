@@ -1,14 +1,15 @@
 [# Facial expressions]
-[choose 1]
-looking [chance 50]back [/chance]at you
-smiling [chance 50]back [/chance]at you
-open smile
-looking at you with [choose 1]disdain|pity|love|amazement|terror|awe|horror[/choose]
-seductive look
-blushing
-eyes closed
-open mouth
-lidded eyes
-bedroom eyes
-seductive look
+[choose _weighted]
+4|looking [chance 50]back [/chance]at you
+4|smiling [chance 50]back [/chance]at you
+2|open smile
+5|looking at you with disdain
+3|looking at you with pity
+5|looking at you with love
+5|blushing
+3|eyes closed
+1|open mouth
+3|lidded eyes
+3|bedroom eyes
+2|seductive look
 [/choose]

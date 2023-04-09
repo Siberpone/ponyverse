@@ -141,6 +141,9 @@ I'm always looking for ways to improve my work and open for some contructive cri
 
 
 # Changelog
+#### 2023-04-09
+* Weighted and pruned Expressions thesaurus.
+
 #### 2023-04-08
 * **Breaking Change** Added groups and repeatability to expressions block.
 * **Breaking Change** Moved GUI templates to views/. Use `[file pv/run]` instead of `[file pv/main]`.

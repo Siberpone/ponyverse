@@ -142,6 +142,7 @@ I'm always looking for ways to improve my work and open for some contructive cri
 
 # Changelog
 #### 2023-04-09
+* Weighted descriptive adjectives.
 * Weighted and pruned Expressions thesaurus.
 
 #### 2023-04-08

@@ -1,22 +1,22 @@
 [# Generic Adjective]
-[choose 1]
-colorful
-comfortable
-complex
-delicate
-dreadful
-dreamlike
-elegant
-epic
-expressive
-festive
-glamorous
-glowing
-lush
-minimalistic
-realistic
-rich
-ridiculous
-sharp
-vibrant
+[choose _weighted]
+5|colorful
+1|comfortable
+3|complex
+4|delicate
+1|dreadful
+5|dreamlike
+4|elegant
+3|epic
+5|expressive
+1|festive
+4|glamorous
+4|glowing
+5|lush
+1|minimalistic
+2|realistic
+3|rich
+1|ridiculous
+4|sharp
+5|vibrant
 [/choose]

@@ -1,9 +1,10 @@
 [# Face parts]
 [choose _weighted]
 5|eyes
-1|muzzle
+1|nose
 1|mouth
 4|ears
 2|eyebrows
 3|eyelashes
+2|lips
 [/choose]

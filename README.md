@@ -1,4 +1,8 @@
 # Ponyverse
+> **Warning**
+>
+> Update Unprompted to 8.0.0!
+
 The configurable dynamic pony prompt helper for [AUTOMATIC1111's Stable Diffusion Web UI](https://github.com/AUTOMATIC1111/stable-diffusion-webui) inspired by [Ponymaster](https://github.com/ZealousMagician/Ponymaster). Comes with a very handy GUI and a number of presets that allow anyone to create some awesome-looking pone!
 
 ![showcase](showcase.jpg)
@@ -134,6 +138,9 @@ I'm always looking for ways to improve my work and open for some contructive cri
 
 
 # Changelog
+#### 2023-04-17
+* Swapped dropdowns with more convenient radio buttons in the Ponyverse Discovery UI, since the related Unprompted bug has been fixed. Don't forget to update Unprompted to 8.0.0!
+
 #### 2023-04-09
 * Added species-awareness (human/pony) to Face block.
 * Weighted descriptive adjectives.

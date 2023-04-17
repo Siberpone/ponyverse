@@ -1,10 +1,7 @@
 # Ponyverse
 > **Warning**
 >
-> This branch swaps Ponyverse Discovery dropdown controls with more convenient radio buttons. But they are curently bugged and will cause Unprompted to crash. There's a pull request to fix it on the Unprompted repo, but it's been hanging there for a while, and there's no knowing when (and if) it will be merged. So, to fix it manually, do the following:
-> 1. open `.../stable-diffusion-webui/extensions/unprompted/scripts/unprompted.py` with a text editor of your choice;
-> 2. go to line 226 and correct `syntax_delimiter` to `syntax.delimiter`;
-> 3. reload webui if it was running.
+> Update Unprompted to 8.0.0!
 
 The configurable dynamic pony prompt helper for [AUTOMATIC1111's Stable Diffusion Web UI](https://github.com/AUTOMATIC1111/stable-diffusion-webui) inspired by [Ponymaster](https://github.com/ZealousMagician/Ponymaster). Comes with a very handy GUI and a number of presets that allow anyone to create some awesome-looking pone!
 
@@ -141,6 +138,9 @@ I'm always looking for ways to improve my work and open for some contructive cri
 
 
 # Changelog
+#### 2023-04-17
+* Swapped dropdowns with more convenient radio buttons in the Ponyverse Discovery UI, since the related Unprompted bug has been fixed. Don't forget to update Unprompted to 8.0.0!
+
 #### 2023-04-09
 * Added species-awareness (human/pony) to Face block.
 * Weighted descriptive adjectives.

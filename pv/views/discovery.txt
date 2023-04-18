@@ -1,6 +1,6 @@
 [template name="Ponyverse Discovery"]
-## Welcome to Ponyverse Discovery!
-The configurable pony prompt helper. Here you can tinker and configure every aspect of the Ponyverse prompt to discover new cool styles or tune it to suit your personal preferences. Now go shuffle some sliders around and make some awesome-looking pone! You can also check out the presets by selecting the "Ponyverse Presets" from the "Select Function" drop-down above.
+### Welcome to Ponyverse Discovery!
+The configurable pony prompt helper. Here you can tinker and configure every aspect of the Ponyverse prompt to discover new cool styles or tune it to suit your personal preferences. You can also check out the presets by selecting the "Ponyverse Presets" from the "Select Template" drop-down above.
 
 See README for more info and advanced usage tips or visit **[Ponyverse repo](https://github.com/Siberpone/ponyverse)** over on GitHub. Have fun!
 
@@ -8,56 +8,74 @@ See README for more info and advanced usage tips or visit **[Ponyverse repo](htt
 [/template]
 
 [# Character Block ]
-[set character_g _new _label="CHARACTER Group" _choices="any|mane6|cmc|support_cast|background|villan|eqg" _ui="radio"]any[/set]
-[set character _new _label="CHARACTER" _placeholder="Type in your character here or leave blank for random choice"]{file pv/get/character group="{{get character_g}}"}[/set]
+[set character_g _new _label="Character Group" _choices="any|mane6|cmc|support_cast|background|villan|eqg" _ui="radio"]any[/set]
+[set character _new _label="Character" _placeholder="Type in your character here or leave blank for random choice"]{file pv/get/character group="{{get character_g}}"}[/set]
 
 [# Species Block ]
-[set species_e _new _label="SPECIES Block enabled" _ui="checkbox"]1[/set]
-[set species _new _label="SPECIES" _placeholder="Type in desired species here or leave blank for automatic choice"]{file pv/get/species}[/set]
+[set species_e _new _label="Species Block enabled" _ui="checkbox"]1[/set]
+[set species _new _label="Species" _placeholder="Type in desired species here or leave blank for automatic choice"]{file pv/get/species}[/set]
 
 [# Custom Block]
-[set custom _new _label="CUSTOM block" _placeholder="Type in your tags here"][/set]
+[set custom _new _label="Custom block" _placeholder="Type in your tags here"][/set]
 
 [# Pose Block ]
-[set pose_g _new _label="POSE Group" _choices="sfw_only|allow_nsfw|nsfw_only" _ui="radio"]sfw_only[/set]
-[set pose_c _new _label="POSE Block Appearing Chance" _ui="slider" _minimum=0 _maximum=100 _step=5]45[/set]
+[wizard_ui_accordion _label="Pose"]
+	{set pose_g _new _label="Group" _choices="sfw_only|allow_nsfw|nsfw_only" _ui="radio"}sfw_only{/set}
+	{set pose_c _new _label="Appearing Chance" _ui="slider" _minimum=0 _maximum=100 _step=5}45{/set}
+[/wizard_ui_accordion]
 
 [# Expression Block ]
-[set expression_g _new _label="EXPRESSION Group" _choices="any|emotional|facial" _ui="radio"]any[/set]
-[set expression_c _new _label="EXPRESSION Block Appearing Chance" _ui="slider" _minimum=0 _maximum=100 _step=5]35[/set]
-[set expression_n _new _label="EXPRESSION Descriptions Number" _ui="slider" _minimum=1 _maximum=5 _step=1]1[/set]
+[wizard_ui_accordion _label="Expression"]
+	{set expression_g _new _label="Group" _choices="any|emotional|facial" _ui="radio"}any{/set}
+	{set expression_c _new _label="Appearing Chance" _ui="slider" _minimum=0 _maximum=100 _step=5}35{/set}
+	{set expression_n _new _label="Repeat Count" _ui="slider" _minimum=1 _maximum=5 _step=1}1{/set}
+[/wizard_ui_accordion]
 
-[# Facial Block ]
-[set face_c _new _label="FACE Block Appearing Chance" _ui="slider" _minimum=0 _maximum=100 _step=5]15[/set]
-[set face_n _new _label="FACE Descriptions Number" _ui="slider" _minimum=1 _maximum=5 _step=1]1[/set]
+[# Face Block ]
+[wizard_ui_accordion _label="Face"]
+	{set face_c _new _label="Appearing Chance" _ui="slider" _minimum=0 _maximum=100 _step=5}15{/set}
+	{set face_n _new _label="Repeat Count" _ui="slider" _minimum=1 _maximum=5 _step=1}1{/set}
+[/wizard_ui_accordion]
 
 [# Body Block ]
-[set body_g _new _label="BODY Group" _choices="sfw_only|allow_nsfw|nsfw_only" _ui="radio"]sfw_only[/set]
-[set body_c _new _label="BODY Block Appearing Chance" _ui="slider" _minimum=0 _maximum=100 _step=5]20[/set]
-[set body_n _new _label="BODY Descriptions Number" _ui="slider" _minimum=1 _maximum=5 _step=1]2[/set]
+[wizard_ui_accordion _label="Body"]
+	{set body_g _new _label="Group" _choices="sfw_only|allow_nsfw|nsfw_only" _ui="radio"}sfw_only{/set}
+	{set body_c _new _label="Appearing Chance" _ui="slider" _minimum=0 _maximum=100 _step=5}20{/set}
+	{set body_n _new _label="Repeat Count" _ui="slider" _minimum=1 _maximum=5 _step=1}2{/set}
+[/wizard_ui_accordion]
 
 [# Attire Block ]
-[set attire_g _new _label="ATTIRE Group" _choices="any|generic|headwear|outfits|sexy" _ui="radio"]any[/set]
-[set attire_c _new _label="ATTIRE Block Appearing Chance" _ui="slider" _minimum=0 _maximum=100 _step=5]20[/set]
-[set attire_n _new _label="ATTIRE Descriptions Number" _ui="slider" _minimum=1 _maximum=10 _step=1]1[/set]
+[wizard_ui_accordion _label="Attire"]
+	{set attire_g _new _label="Group" _choices="any|generic|headwear|outfits|sexy" _ui="radio"}any{/set}
+	{set attire_c _new _label="Appearing Chance" _ui="slider" _minimum=0 _maximum=100 _step=5}20{/set}
+	{set attire_n _new _label="Repeat Count" _ui="slider" _minimum=1 _maximum=10 _step=1}1{/set}
+[/wizard_ui_accordion]
 
 [# Genereic Block ]
-[set generic_c _new _label="GENERIC Block Appearing Chance" _ui="slider" _minimum=0 _maximum=100 _step=5]85[/set]
-[set generic_n _new _label="GENERIC Descriptions Number" _ui="slider" _minimum=1 _maximum=10 _step=1]3[/set]
+[wizard_ui_accordion _label="Generic"]
+	{set generic_c _new _label="Appearing Chance" _ui="slider" _minimum=0 _maximum=100 _step=5}85{/set}
+	{set generic_n _new _label="Repeat Count" _ui="slider" _minimum=1 _maximum=10 _step=1}3{/set}
+[/wizard_ui_accordion]
 
 [# Scenery Block ]
-[set scenery_g _new _label="SCENERY Group" _choices="any|biome|nature|place|weather|time" _ui="radio"]any[/set]
-[set scenery_c _new _label="SCENERY Block Appearing Chance" _ui="slider" _minimum=0 _maximum=100 _step=5]15[/set]
-[set scenery_n _new _label="SCENERY Descriptions Number" _ui="slider" _minimum=1 _maximum=10 _step=1]1[/set]
+[wizard_ui_accordion _label="Scenery"]
+	{set scenery_g _new _label="Group" _choices="any|biome|nature|place|weather|time" _ui="radio"}any{/set}
+	{set scenery_c _new _label="Appearing Chance" _ui="slider" _minimum=0 _maximum=100 _step=5}15{/set}
+	{set scenery_n _new _label="Repeat Count" _ui="slider" _minimum=1 _maximum=10 _step=1}1{/set}
+[/wizard_ui_accordion]
 
 [# Medium Block ]
-[set medium_g _new _label="MEDIUM Group" _choices="any|painting|drawing|realistic|other" _ui="radio"]any[/set]
-[set medium_c _new _label="MEDIUM Block Appearing Chance" _ui="slider" _minimum=0 _maximum=100 _step=5]75[/set]
+[wizard_ui_accordion _label="Art Medium"]
+	{set medium_g _new _label="Group" _choices="any|painting|drawing|realistic|other" _ui="radio"}any{/set]
+	{set medium_c _new _label="Appearing Chance" _ui="slider" _minimum=0 _maximum=100 _step=5}75{/set}
+[/wizard_ui_accordion]
 
 [# Style Block ]
-[set style_g _new _label="STYLE Group" _choices="any|artist|art_movement|setting" _ui="radio"]any[/set]
-[set style_c _new _label="STYLE Block Appearing Chance" _ui="slider" _minimum=0 _maximum=100 _step=5]45[/set]
-[set style_n _new _label="STYLE Descriptions Number" _ui="slider" _minimum=1 _maximum=10 _step=1]1[/set]
+[wizard_ui_accordion _label="Art Style"]
+	{set style_g _new _label="Group" _choices="any|artist|art_movement|setting" _ui="radio"}any{/set}
+	{set style_c _new _label="Appearing Chance" _ui="slider" _minimum=0 _maximum=100 _step=5}45{/set}
+	{set style_n _new _label="Repeat Count" _ui="slider" _minimum=1 _maximum=10 _step=1}1{/set}
+[/wizard_ui_accordion]
 
 [# Negative Prompt Settings ]
 [set np_mode _new _label="Negative Prompt Mode" _choices="use_mine|append|blank" _ui="radio"]append[/set]

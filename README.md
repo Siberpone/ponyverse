@@ -138,6 +138,9 @@ I'm always looking for ways to improve my work and open for some contructive cri
 
 
 # Changelog
+#### 2023-04-18
+* Tidied up Ponyverse Discovery UI with the new accordion feature.
+
 #### 2023-04-17
 * Swapped dropdowns with more convenient radio buttons in the Ponyverse Discovery UI, since the related Unprompted bug has been fixed. Don't forget to update Unprompted to 8.0.0!
 

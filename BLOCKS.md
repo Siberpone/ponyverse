@@ -1,5 +1,5 @@
 # Blocks
-This section describes available blocks and how to use them in your prompts. Blocks can be called by typing `[file pv/get/blockname]` into the prompt where you want the block content to appear. Blocks also have shorthands for convinience which usually come in the form of `[file pv/x]`.
+This section describes available blocks and how to use them in your prompts. Blocks can be called by typing `[file pv/get/blockname]` into the prompt where you want the block content to appear. Blocks also have shorthands for convenience which usually come in the form of `[file pv/x]`.
 
 ## Character
 Fetches a random character from the thesaurus. Character group can be specified to narrow down selection.

@@ -14,7 +14,7 @@ All images generated with the default Ponyverse preset.
 ### Requirements
 * [AUTOMATIC1111's Stable Diffusion Web UI](https://github.com/AUTOMATIC1111/stable-diffusion-webui);
 * [Unprompted](https://github.com/ThereforeGames/unprompted) extension;
-* *(optional)* [AstraliteHeart's V4 Pony Diffusion](https://huggingface.co/AstraliteHeart/pony-diffusion-v4). While Ponyverse should work relatively well on any tag-based pony model, its thesaurus and especially default negative promt were tuned specifically for Astra's V4.
+* *(optional)* [AstraliteHeart's V4 Pony Diffusion](https://huggingface.co/AstraliteHeart/pony-diffusion-v4). While Ponyverse should work relatively well on any tag-based pony model, its thesaurus and especially default negative prompt were tuned specifically for Astra's V4.
 
 ### Manual
 Clone this repository with
@@ -27,16 +27,16 @@ or click the "code" button in the top right, then click "Download ZIP" and unzip
 ```
 
 # Usage
-Ponyverse prompt is contructed form individualy configurable thematic blocks that are arranged one after another. Each block will generate a random description or a phrase, that reflects its subject or theme. For example, the "attire" block will generate character's attire description like "wearing socks" or "wearing dress". There are 4 main ways you can use these blocks to construct your prompt, that are described below.
+Ponyverse prompt is constructed form individually configurable thematic blocks that are arranged one after another. Each block will generate a random description or a phrase, that reflects its subject or theme. For example, the "attire" block will generate character's attire description like "wearing socks" or "wearing dress". There are 4 main ways you can use these blocks to construct your prompt, that are described below.
 
 > **Note**
 >
 > Ensure that the Unprompted extension is enabled.
 
 ## Ponyverse Discovery
-This is the prefered method as it provides a handy GUI for Ponyverse. You can expose it by opening the "Unprompted" fold in the Web UI's left panel and then opening the "Wizard" fold. After that, select "Ponyverse Discovery" from the "Select Function" drop-down and that should reveal the GUI, as shown in the screenshot below:
+This is the preferred method as it provides a handy GUI for Ponyverse. You can expose it by opening the "Unprompted" fold in the Web UI's left panel and then opening the "Wizard" fold. After that, select "Ponyverse Discovery" from the "Select Function" drop-down and that should reveal the GUI, as shown in the screenshot below:
 
-![GUI scereenshot](wizard.jpg)
+![GUI screenshot](wizard.jpg)
 
 From here you can tweak various Ponyverse prompt parameters. Each UI input controls a certain parameter of a block and has a short annotation, that clarifies its intent. The blocks will appear in prompt in the same order as they appear in the UI and usually can be configured with the following parameters:
 
@@ -57,7 +57,7 @@ By default Ponyverse includes its own negative prompt, tuned specifically for As
 
 
 ### Saving Your Presets
-You can save your Ponyverse settings by navigating to the bottom of the Wizard fold and clicking the "Generate Shortcode" button. The text string that will appear underneath is your preset. Save it somwhere in a text file, for example, for future use (see [Directly In The Prompt Textbox](#directly-in-the-prompt-textbox)). I know this is inconvinient, but, unfortunately, Unprompted doesn't expose any mechanism to save/load these programmatically. You can somewhat mitigate that by adding your preset to the Ponyverse Preset Selector (see below).
+You can save your Ponyverse settings by navigating to the bottom of the Wizard fold and clicking the "Generate Shortcode" button. The text string that will appear underneath is your preset. Save it somewhere in a text file, for example, for future use (see [Directly In The Prompt Textbox](#directly-in-the-prompt-textbox)). I know this is inconvenient, but, unfortunately, Unprompted doesn't expose any mechanism to save/load these programmatically. You can somewhat mitigate that by adding your preset to the Ponyverse Preset Selector (see below).
 
 ## Preset Selector
 Ponyverse Preset Selector allows you to run a number of pre-defined presets and, optionally, specify a character and species. To expose its interface, select the "Ponyverse Presets" from the "Select Function" drop-down in the Unprompted Wizard fold:
@@ -86,7 +86,7 @@ Unfortunately, there's currently no way to add custom presets, other than manual
 [elif preset="muh_fetish"]
 [/elif]
 ```
-5. Paste your preset string (see [Saving Your Presets](#saving-your-presets)) inbetween the [elif] blocks from step 4 and **replace square brackets with curly ones** (it's very important that you do, otherwise it will bug out; nothing I can do about that, yet another Unprompted gimmick):
+5. Paste your preset string (see [Saving Your Presets](#saving-your-presets)) between the [elif] blocks from step 4 and **replace square brackets with curly ones** (it's very important that you do, otherwise it will bug out; nothing I can do about that, yet another Unprompted gimmick):
 ```
 [elif preset="muh_fetish"]
 	{file "pv/main" character_g=any pose_c=60 expression_c=50 face_c=15 face_n=1 body_c=20 body_n=2 setting_g=any setting_c=20 attire_c=20 generic_c=85 generic_n=3 scenery_g=any scenery_c=15 scenery_n=1 medium_g=any medium_c=75 style_g=any style_c=45 np_mode=append}
@@ -104,7 +104,7 @@ This is more of a CLI style method. The simplest use case would be to just type 
 ```
 [file pv/run character="twilight sparkle" species="unicorn, pony" pose_c=35 style_g=artist generic_n=4]
 ```
-This sets the character to Twilight Sparkle; species to "alicorn, pony"; pose block appearing chance to 35%; artistic style block thematical group to "artist" and generic block repeat number to 4. All available variables can be inferred from looking at the [Ponyverse Discovery GUI](#ponyverse-discovery). Each contlrol has a brief description that is followed by an arrow and a variable name. They usually follow the universal format of blockname_x and have the following meaning:
+This sets the character to Twilight Sparkle; species to "alicorn, pony"; pose block appearing chance to 35%; artistic style block thematic group to "artist" and generic block repeat number to 4. All available variables can be inferred from looking at the [Ponyverse Discovery GUI](#ponyverse-discovery). Each control has a brief description that is followed by an arrow and a variable name. They usually follow the universal format of blockname_x and have the following meaning:
 
 * **blockname_c** - chance that the block will appear in the prompt. Set to 0 to disable the block; set to 100 to always include the block;
 * **blockname_n** *(for some blocks)* - how many descriptions should the block generate;
@@ -132,7 +132,7 @@ See [BLOCKS](BLOCKS.md) for in-depth description.
 - [ ] Fine tune for Astra's V5 when it arrives.
 
 # Contributing
-I'm always looking for ways to improve my work and open for some contructive criticism and suggestions. Here're some ways you can help make Ponyverse better:
+I'm always looking for ways to improve my work and open for some constructive criticism and suggestions. Here are some ways you can help make Ponyverse better:
 * Want to request a feature or found a bug? Create an [issue](https://github.com/Siberpone/ponyverse/issues).
 * Have an idea on how to improve Ponyverse or want to give some feedback or simply need help figuring it out? Open up a [discussion](https://github.com/Siberpone/ponyverse/discussions).
 

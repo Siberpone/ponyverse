@@ -1,36 +1,43 @@
-[get character],
+[array blocks _append="{get character}"]
 [if species_e=1]
-	[get species],
+    [array blocks _append="{get species}"]
 [/if]
-[file pv/block/custom]
+
+[set char_n][info character_count][get custom][/info][/set]
+[if "char_n > 0"]
+    [array blocks _append="{get custom}"]
+[/if]
+[unset char_n]
+
+[array blocks _append="(derpibooru_p_95:1.1)"]
 
 [set group][get pose_g][/set]
-[chance "{get pose_c}"][file pv/get/pose],[/chance]
+[chance "{get pose_c}"][array blocks _append="{file pv/get/pose}"][/chance]
 
 [sets group="{get expression_g}" n="{get expression_n}"]
-[chance "{get expression_c}"][file pv/get/expression],[/chance]
+[chance "{get expression_c}"][array blocks _append="{file pv/get/expression}"][/chance]
 
 [sets n="{get face_n}"]
-[chance "{get face_c}"][file pv/get/face],[/chance]
+[chance "{get face_c}"][array blocks _append="{file pv/get/face}"][/chance]
 
 [sets group="{get body_g}" n="{get body_n}"]
-[chance "{get body_c}"][file pv/get/body],[/chance]
+[chance "{get body_c}"][array blocks _append="{file pv/get/body}"][/chance]
 
 [sets group="{get attire_g}" n="{get attire_n}"]
-[chance "{get attire_c}"][file pv/get/attire],[/chance]
+[chance "{get attire_c}"][array blocks _append="{file pv/get/attire}"][/chance]
 
 [sets n="{get generic_n}"]
-[chance "{get generic_c}"][file pv/get/generic],[/chance]
+[chance "{get generic_c}"][array blocks _append="{file pv/get/generic}"][/chance]
 
 [sets group="{get scenery_g}" n="{get scenery_n}"]
-[chance "{get scenery_c}"]([file pv/get/scenery]:0.35),[/chance]
+[chance "{get scenery_c}"][array blocks _append="({file pv/get/scenery}:0.35)"][/chance]
 
 [sets group="{get medium_g}"]
-[chance "{get medium_c}"][file pv/get/medium],[/chance]
+[chance "{get medium_c}"][array blocks _append="{file pv/get/medium}"][/chance]
 
 [sets n="{get style_n}" group="{get style_g}"]
-[chance "{get style_c}"][file pv/get/style],[/chance]
+[chance "{get style_c}"][array blocks _append="{file pv/get/style}"][/chance]
 
-(derpibooru_p_95:1.2)
+[get blocks _sep=", "]
 
 [file pv/utils/negative]

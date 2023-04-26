@@ -4,35 +4,35 @@
 [/##]
 
 [if "species == 'humanized' or species == 'equesrtia girls'"]
-	{set np_base}derpibooru_p_low, sfm, anime, loli, anthro, ugly, deformed{/set}
+	[set np_base]derpibooru_p_low, sfm, anime, loli, anthro, ugly, deformed[/set]
 [/if]
 [else]
-	{set np_base}derpibooru_p_low, sfm, (anime:0.5), (furry:0.6), anthro, loli, hoers, (horse:0.45), (dog:0.5), (cat:0.5){/set}
+	[set np_base]derpibooru_p_low, sfm, (anime:0.5), (furry:0.6), anthro, loli, hoers, (horse:0.45), (dog:0.5), (cat:0.5)[/set]
 [/else]
 
 [if np_mode="use_mine"]
-	{set negative_prompt}{get np}{/set}
+	[set negative_prompt][get np][/set]
 [/if]
 [elif np_mode="append"]
 
 	[# Chatracter-specific decorators ]
-	{if character="starlight glimmer"}
-		{{set np_base}}{{{get np_base}}}, (stars:0.9), (crystals:0.75){{/set}}
-	{/if}
-	{elif character="fluttershy"}
-		{{set np_base}}{{{get np_base}}}, octopus{{/set}}
-	{/elif}
-	{elif character="rainbow dash"}
-		{{set np_base}}{{{get np_base}}}, dog snout, stallion, pitbull{{/set}}
-	{/elif}
-	{elif character="pinkie pie"}
-		{{set np_base}}{{{get np_base}}}, (anime eyes:0.65){{/set}}
-	{/elif}
-	{elif character="trixie"}
-		{{set np_base}}{{{replace horse:0.45=horse:0.5}}}{{{get np_base}}}{{{/replace}}}, (fat:0.8){{/set}}
-	{/elif}
+	[if character="starlight glimmer"]
+		[set np_base][get np_base], (stars:0.9), (crystals:0.75)[/set]
+	[/if]
+	[elif character="fluttershy"]
+		[set np_base][get np_base], octopus[/set]
+	[/elif]
+	[elif character="rainbow dash"]
+		[set np_base][get np_base], dog snout, stallion, pitbull[/set]
+	[/elif]
+	[elif character="pinkie pie"]
+		[set np_base][get np_base], (anime eyes:0.65)[/set]
+	[/elif]
+	[elif character="trixie"]
+		[set np_base][replace horse:0.45=horse:0.5][get np_base][/replace], (fat:0.8)[/set]
+	[/elif]
 
 	[# Append user negative prompt ]
-	{set np_count}{info character_count}{get np}{/info}{/set}
-	{set negative_prompt}{{get np_base}}{if "np_count > 0"}, {get np}{/if}{/set}
+	[set np_count][info character_count][get np][/info][/set]
+	[set negative_prompt][get np_base][if "np_count > 0"], [get np][/if][/set]
 [/elif]

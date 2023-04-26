@@ -13,20 +13,20 @@
 [/##]
 
 [if "species == 'humanized' or species == 'equestria girls'"]
-	{set s}human{/set}
+	[set s]human[/set]
 [/if]
 [else]
-	{set s}pony{/set}
+	[set s]pony[/set]
 [/else]
 
 [if group="allow_nsfw"]
-	{set p_group}{{get s}}-*{/set}
+	[set p_group][get s]-*[/set]
 [/if]
 [elif group="nsfw_only"]
-	{set p_group}{{get s}}-nsfw{/set}
+	[set p_group][get s]-nsfw[/set]
 [/elif]
 [else]
-	{set p_group}{{get s}}-sfw{/set}
+	[set p_group][get s]-sfw[/set]
 [/else]
 
 [file "pv/thesaurus/pose/{get p_group}"]

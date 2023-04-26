@@ -14,18 +14,18 @@
 [/##]
 
 [if group="any"]
-	{repeat n _sep=", "}{{choose 1}}
-		{{{file pv/thesaurus/style/art_movement}}}
-		by {{{file pv/thesaurus/style/artist}}}
-		{{{file pv/thesaurus/style/setting}}} setting
-	{{/choose}}{/repeat}
+	[repeat n _sep=", "][choose 1]
+        [file pv/thesaurus/style/art_movement]
+        by [file pv/thesaurus/style/artist]
+        [file pv/thesaurus/style/setting] setting
+	[/choose][/repeat]
 [/if]
 [elif group="artist"]
-	by {repeat n _sep=" "}{{file pv/thesaurus/style/artist}}{/repeat}
+	by [repeat n _sep=" "][file pv/thesaurus/style/artist][/repeat]
 [/elif]
 [elif group="setting"]
-	{repeat n _sep=", "}{{file pv/thesaurus/style/setting}} setting{/repeat}
+	[repeat n _sep=", "][file pv/thesaurus/style/setting] setting[/repeat]
 [/elif]
 [else]
-	{repeat n _sep=", "}{{file pv/thesaurus/style/art_movement}}{/repeat}
+	[repeat n _sep=", "][file pv/thesaurus/style/art_movement][/repeat]
 [/else]

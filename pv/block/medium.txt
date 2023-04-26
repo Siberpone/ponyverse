@@ -13,13 +13,13 @@
 [/##]
 
 [if group="any"]
-	{choose _weighted}
-		15|{{file pv/thesaurus/medium/drawing}}
-		15|{{file pv/thesaurus/medium/painting}}
-		4|{{file pv/thesaurus/medium/realistic}}
-		6|{{file pv/thesaurus/medium/other}}
-	{/choose}
+	[choose _weighted]
+		15|[file pv/thesaurus/medium/drawing]
+		15|[file pv/thesaurus/medium/painting]
+		4|[file pv/thesaurus/medium/realistic]
+		6|[file pv/thesaurus/medium/other]
+	[/choose]
 [/if]
 [else]
-	{file pv/get/single cat=medium sg="{{get group}}"}
+	[file "pv/thesaurus/medium/{get group}"]
 [/else]

@@ -8,18 +8,25 @@
 	TODO:
 		- expand thesaurus
 		- refactor to make use of thesaurus folder structure instead of a hardcoded list
+        - get rid of temp workarounds
 
 	BLOCK QUALITY: good
 [/##]
 
+[# temp nested choose workaround]
+[set adj][choose]compliment|descriptive[/choose][/set]
+[set shading][choose 1]soft|hard|flat|[file pv/thesaurus/adjective/compliment][/choose][/set]
+
 [choose n]
-	{file pv/thesaurus/adjective/compliment} details|{file pv/thesaurus/adjective/descriptive} details
-	{file pv/thesaurus/adjective/compliment-ly} detailed
-	{file pv/thesaurus/adjective/compliment} cinematic lighting
-	trending on [choose 1]artstation|pixiv|deviantart|behance|zbrushcentral|cgsociety[/choose]
-	[choose 1]soft|hard|flat|{file pv/thesaurus/adjective/compliment}[/choose] shading
+	[file "pv/thesaurus/adjective/{get adj}"] details
+	[file pv/thesaurus/adjective/compliment-ly] detailed
+	[file pv/thesaurus/adjective/compliment] cinematic lighting
+	trending on [file pv/thesaurus/misc/art-sites]
+	[get shading] shading
 	countershading
 	god rays
 	masterpiece
 	4K
 [/choose]
+
+[unset adj shading]

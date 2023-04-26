@@ -1,7 +1,7 @@
 # Ponyverse
 > **Warning**
 >
-> Update Unprompted to 8.0.0!
+> Update Unprompted to v9.0.1!
 
 The configurable dynamic pony prompt helper for [AUTOMATIC1111's Stable Diffusion Web UI](https://github.com/AUTOMATIC1111/stable-diffusion-webui) inspired by [Ponymaster](https://github.com/ZealousMagician/Ponymaster). Comes with a very handy GUI and a number of presets that allow anyone to create some awesome-looking pone!
 
@@ -13,7 +13,7 @@ All images generated with the default Ponyverse preset.
 
 ### Requirements
 * [AUTOMATIC1111's Stable Diffusion Web UI](https://github.com/AUTOMATIC1111/stable-diffusion-webui);
-* [Unprompted](https://github.com/ThereforeGames/unprompted) extension;
+* [Unprompted](https://github.com/ThereforeGames/unprompted) v9.0.1+ extension;
 * *(optional)* [AstraliteHeart's V4 Pony Diffusion](https://huggingface.co/AstraliteHeart/pony-diffusion-v4). While Ponyverse should work relatively well on any tag-based pony model, its thesaurus and especially default negative prompt were tuned specifically for Astra's V4.
 
 ### Manual
@@ -138,6 +138,9 @@ I'm always looking for ways to improve my work and open for some constructive cr
 
 
 # Changelog
+#### 2023-04-26
+* **Breaking Change** Refactored everything for Unprompted 9.* new syntax. Some stuff might be broken.
+
 #### 2023-04-18
 * Tidied up Ponyverse Discovery UI with the new accordion feature.
 

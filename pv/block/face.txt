@@ -10,17 +10,19 @@
 [/##]
 
 [if "species == 'humanized' or species == 'equestria girls'"]
-	{set s}human{/set}
+	[set s]human[/set]
 [/if]
 [else]
-	{set s}pony{/set}
+	[set s]pony[/set]
 [/else]
 
-[repeat n _sep=", "]{choose _weighted}
-	25|{file pv/thesaurus/adjective/descriptive} {file "pv/thesaurus/face/{{get s}}"}
-	45|{file pv/thesaurus/adjective/compliment} {file "pv/thesaurus/face/{{get s}}"}
-	15|{file pv/thesaurus/adjective/elemental} {file "pv/thesaurus/face/{{get s}}"}
-	15|{file pv/thesaurus/adjective/size} {file "pv/thesaurus/face/{{get s}}"}
-{/choose}[/repeat]
+[repeat n _sep=", "]
+    [choose _weighted]
+        25|[file pv/thesaurus/adjective/descriptive] [file "pv/thesaurus/face/{get s}"]
+        45|[file pv/thesaurus/adjective/compliment] [file "pv/thesaurus/face/{get s}"]
+        15|[file pv/thesaurus/adjective/elemental] [file "pv/thesaurus/face/{get s}"]
+        15|[file pv/thesaurus/adjective/size] [file "pv/thesaurus/face/{get s}"]
+    [/choose]
+[/repeat]
 
 [unset s]

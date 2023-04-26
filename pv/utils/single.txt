@@ -14,10 +14,10 @@
 [set s_group _new][get sg][/set]
 
 [if "s_group == 'any'"]
-	{file "pv/thesaurus/{{get category}}/*"}
+	[file "pv/thesaurus/{get category}/*"]
 [/if]
 [else]
-	{file "pv/thesaurus/{{get category}}/{{get s_group}}"}
+	[file "pv/thesaurus/{get category}/{get s_group}"]
 [/else]
 
 [unset category cat s_group sg]

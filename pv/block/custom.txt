@@ -5,6 +5,6 @@
 
 [set char_n][info character_count][get custom][/info][/set]
 [if "char_n > 0"]
-	{get custom},
+	[get custom],
 [/if]
 [unset char_n]

@@ -2,7 +2,7 @@
 [choose 1]
 presenting
 head down ass up
-{chance 50}lying {/chance}on back
+[chance 50]lying [/chance]on back
 spreading
 tail aside
 [/choose]

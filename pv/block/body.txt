@@ -13,27 +13,29 @@
 [/##]
 
 [if "species == 'humanized' or species == 'equestria girls'"]
-	{set s}human{/set}
+	[set s]human[/set]
 [/if]
 [else]
-	{set s}pony{/set}
+	[set s]pony[/set]
 [/else]
 
 [if group="allow_nsfw"]
-	{set b_group}{{get s}}-*{/set}
+	[set b_group][get s]-*[/set]
 [/if]
 [elif group="nsfw_only"]
-	{set b_group}{{get s}}-nsfw{/set}
+	[set b_group][get s]-nsfw[/set]
 [/elif]
 [else]
-	{set b_group}{{get s}}-sfw{/set}
+	[set b_group][get s]-sfw[/set]
 [/else]
 
-[repeat n _sep=", "]{choose _weighted}
-	20|{file pv/thesaurus/adjective/descriptive} {file "pv/thesaurus/body/{{get b_group}}"}
-	45|{file pv/thesaurus/adjective/compliment} {file "pv/thesaurus/body/{{get b_group}}"}
-	20|{file pv/thesaurus/adjective/elemental} {file "pv/thesaurus/body/{{get b_group}}"}
-	15|{file pv/thesaurus/adjective/size} {file "pv/thesaurus/body/{{get b_group}}"}
-{/choose}[/repeat]
+[repeat n _sep=", "]
+    [choose _weighted]
+        20|[file pv/thesaurus/adjective/descriptive] [file "pv/thesaurus/body/{get b_group}"]
+        45|[file pv/thesaurus/adjective/compliment] [file "pv/thesaurus/body/{get b_group}"]
+        20|[file pv/thesaurus/adjective/elemental] [file "pv/thesaurus/body/{get b_group}"]
+        15|[file pv/thesaurus/adjective/size] [file "pv/thesaurus/body/{get b_group}"]
+    [/choose]
+[/repeat]
 
 [unset s b_group]

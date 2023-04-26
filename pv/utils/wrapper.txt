@@ -7,9 +7,9 @@
 [/##]
 
 [set g _new]any[/set]
-[set group _new]{get g}[/set]
+[set group _new][get g][/set]
 [set n _new]1[/set]
 
 [file "pv/block/{get block}"]
 
-[unset group n block]
+[unset g group n block]

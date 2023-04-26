@@ -17,15 +17,15 @@
 [/##]
 
 [if group="any"]
-	{choose n}
-		{file pv/thesaurus/scenery/biome} background
-		{file pv/thesaurus/adjective/weather} weather
-		{file pv/thesaurus/adjective/weather} {file pv/thesaurus/scenery/place} background
-		{file pv/thesaurus/scenery/place} at {file pv/thesaurus/scenery/time} background
-		{file pv/thesaurus/adjective/descriptive} {file pv/thesaurus/scenery/time}
-		{file pv/thesaurus/adjective/*} background
-	{/choose}
+	[choose n]
+		[file pv/thesaurus/scenery/biome] background
+		[file pv/thesaurus/adjective/weather] weather
+		[file pv/thesaurus/adjective/weather] [file pv/thesaurus/scenery/place] background
+		[file pv/thesaurus/scenery/place] at [file pv/thesaurus/scenery/time] background
+		[file pv/thesaurus/adjective/descriptive] [file pv/thesaurus/scenery/time]
+		[file pv/thesaurus/adjective/*] background
+	[/choose]
 [/if]
 [else]
-	{repeat n _sep=", "}{{file pv/get/single cat="scenery" sg="{{{get group}}}"}}{/repeat}
+	[repeat n _sep=", "][file "pv/thesaurus/scenery/{get group}"][/repeat]
 [/else]

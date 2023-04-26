@@ -15,15 +15,15 @@
 [/##]
 
 [if group="any"]
-	{choose _weighted}
-		9|{file pv/thesaurus/character/mane6}
-		3|{file pv/thesaurus/character/cmc}
-		8|{file pv/thesaurus/character/support_cast}
-		4|{file pv/thesaurus/character/background}
-		2|{file pv/thesaurus/character/villan}
-		4|{file pv/thesaurus/character/eqg}
-	{/choose}
+	[choose _weighted]
+		9|[file pv/thesaurus/character/mane6]
+		3|[file pv/thesaurus/character/cmc]
+		8|[file pv/thesaurus/character/support_cast]
+		4|[file pv/thesaurus/character/background]
+		2|[file pv/thesaurus/character/villan]
+		4|[file pv/thesaurus/character/eqg]
+	[/choose]
 [/if]
 [else]
-	{file pv/get/single cat="character" sg="{{get group}}"}
+	[file "pv/thesaurus/character/{get group}"]
 [/else]

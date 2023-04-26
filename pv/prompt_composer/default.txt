@@ -1,17 +1,36 @@
 [get character],
 [if species_e=1]
-	{get species},
+	[get species],
 [/if]
 [file pv/block/custom]
-[chance "{get pose_c}"]{file pv/get/pose group="{{get pose_g}}"},[/chance]
-[chance "{get expression_c}"]{file pv/get/expression group="{{get expression_g}}" n="{{get expression_n}}"},[/chance]
-[chance "{get face_c}"]{file pv/get/face n="{{get face_n}}"},[/chance]
-[chance "{get body_c}"]{file pv/get/body group="{{get body_g}}" n="{{get body_n}}"},[/chance]
-[chance "{get attire_c}"]{file pv/get/attire group="{{get attire_g}}" n="{{get attire_n}}"},[/chance]
-[chance "{get generic_c}"]{file pv/get/generic n="{{get generic_n}}"},[/chance]
-[chance "{get scenery_c}"]({file pv/get/scenery group="{{get scenery_g}}" n="{{get scenery_n}}"}:0.35),[/chance]
-[chance "{get medium_c}"]{file pv/get/medium group="{{get medium_g}}"},[/chance]
-[chance "{get style_c}"]{file pv/get/style n="{{get style_n}}" group="{{get style_g}}"},[/chance]
+
+[set group][get pose_g][/set]
+[chance "{get pose_c}"][file pv/get/pose],[/chance]
+
+[sets group="{get expression_g}" n="{get expression_n}"]
+[chance "{get expression_c}"][file pv/get/expression],[/chance]
+
+[sets n="{get face_n}"]
+[chance "{get face_c}"][file pv/get/face],[/chance]
+
+[sets group="{get body_g}" n="{get body_n}"]
+[chance "{get body_c}"][file pv/get/body],[/chance]
+
+[sets group="{get attire_g}" n="{get attire_n}"]
+[chance "{get attire_c}"][file pv/get/attire],[/chance]
+
+[sets n="{get generic_n}"]
+[chance "{get generic_c}"][file pv/get/generic],[/chance]
+
+[sets group="{get scenery_g}" n="{get scenery_n}"]
+[chance "{get scenery_c}"]([file pv/get/scenery]:0.35),[/chance]
+
+[sets group="{get medium_g}"]
+[chance "{get medium_c}"][file pv/get/medium],[/chance]
+
+[sets n="{get style_n}" group="{get style_g}"]
+[chance "{get style_c}"][file pv/get/style],[/chance]
+
 (derpibooru_p_95:1.2)
 
 [file pv/utils/negative]

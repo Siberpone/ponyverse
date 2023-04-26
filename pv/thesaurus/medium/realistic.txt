@@ -1,12 +1,16 @@
 [# Type of medium]
-[choose 1]
-[chance 30]realistic [/chance]3d render
-3d
-photography
-picture
-photograph
-[chance 45]realistic [/chance]sculpture
-[chance 45]realistic [/chance]statuette
-[chance 65]realistic [/chance]plushie
-clay model
+[choose _weighted]
+3|3d render
+1|realistic 3d render
+3|3d
+3|photography
+3|picture
+3|photograph
+3|sculpture
+3|statuette
+3|plushie
+2|realistic sculpture
+2|realistic statuette
+2|realistic plushie
+3|clay model
 [/choose]

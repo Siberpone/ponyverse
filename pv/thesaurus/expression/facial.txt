@@ -1,7 +1,9 @@
 [# Facial expressions]
 [choose _weighted]
-4|looking [chance 50]back [/chance]at you
-4|smiling [chance 50]back [/chance]at you
+4|looking at you
+4|smiling at you
+3|looking back at you
+3|smiling back at you
 2|open smile
 5|looking at you with disdain
 3|looking at you with pity
